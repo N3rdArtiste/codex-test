@@ -13,12 +13,12 @@ const THEME_KEY = 'invicta-theme-v2';
 const REGION_KEY = 'invicta-region-v2';
 
 const REGION_CONFIG = {
-  NZ: { label: 'New Zealand', currency: 'NZD', locale: 'en-NZ', setup: 145 },
-  CA: { label: 'Canada', currency: 'CAD', locale: 'en-CA', setup: 125 },
-  US: { label: 'United States', currency: 'USD', locale: 'en-US', setup: 89 },
-  AU: { label: 'Australia', currency: 'AUD', locale: 'en-AU', setup: 129 },
-  EU: { label: 'Europe', currency: 'EUR', locale: 'en-IE', setup: 75 },
-  GB: { label: 'United Kingdom', currency: 'GBP', locale: 'en-GB', setup: 66 }
+  NZ: { label: 'New Zealand', currency: 'NZD', locale: 'en-NZ', monthly: 20, shopify: 299 },
+  CA: { label: 'Canada', currency: 'CAD', locale: 'en-CA', monthly: 16, shopify: 258 },
+  US: { label: 'United States', currency: 'USD', locale: 'en-US', monthly: 12, shopify: 183 },
+  AU: { label: 'Australia', currency: 'AUD', locale: 'en-AU', monthly: 18, shopify: 266 },
+  EU: { label: 'Europe', currency: 'EUR', locale: 'en-IE', monthly: 10, shopify: 154 },
+  GB: { label: 'United Kingdom', currency: 'GBP', locale: 'en-GB', monthly: 9, shopify: 136 }
 };
 
 const REGION_FLAGS = {
@@ -60,13 +60,10 @@ const formatMoney = (amount, locale, currency) =>
 
 const applyRegionPrices = (regionCode) => {
   const config = REGION_CONFIG[regionCode] || REGION_CONFIG.US;
-  const setup = config.setup;
-  const monthly = Math.max(1, Math.round((setup / 145) * 5));
-  const shopify = Math.max(1, Math.round((setup / 145) * 299));
+  const monthly = config.monthly;
+  const shopify = config.shopify;
 
   const values = {
-    'setup-inline': formatMoney(setup, config.locale, config.currency),
-    'setup-full': `${formatMoney(setup, config.locale, config.currency)} ${config.currency}`,
     'monthly-inline': formatMoney(monthly, config.locale, config.currency),
     'monthly-full': `${formatMoney(monthly, config.locale, config.currency)}/mo`,
     'shopify-full': `${formatMoney(shopify, config.locale, config.currency)} ${config.currency}`
