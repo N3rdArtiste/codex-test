@@ -1,4 +1,2 @@
 User-agent: *
-Allow: /
-
-Sitemap: https://yourdomain.co.nz/sitemap.xml
+Disallow: /
