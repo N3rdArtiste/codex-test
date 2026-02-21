@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en-NZ" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Website as a Service for Growing Businesses | Version 2</title>
+  <meta name="description"
+    content="Modern, minimal website for local businesses. Get set up for $145 one-time, plus a required $5/month hosting and domain fee." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0b0f1a" />
+  <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Local Website Partner",
+        "description": "Website services for growing businesses, including website setup, Shopify setup, and custom app solutions.",
+        "areaServed": "NZ",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Website and Digital Packages",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "name": "Get Me Online Setup + Website Essentials",
+              "priceCurrency": "NZD",
+              "priceSpecification": [
+                {
+                  "@type": "UnitPriceSpecification",
+                  "name": "One-time setup",
+                  "price": "145",
+                  "priceCurrency": "NZD"
+                },
+                {
+                  "@type": "UnitPriceSpecification",
+                  "name": "Website essentials monthly",
+                  "price": "5",
+                  "priceCurrency": "NZD",
+                  "billingDuration": "P1M"
+                }
+              ],
+              "description": "Design, build, launch, hosting and domain essentials for a professional website."
+            },
+            {
+              "@type": "Offer",
+              "name": "Shopify Store Setup (Optional Add-on)",
+              "price": "299",
+              "priceCurrency": "NZD",
+              "description": "One-time Shopify setup including store structure, theme customization, product setup, payment and shipping baseline, and mobile-ready SEO fundamentals."
+            },
+            {
+              "@type": "Offer",
+              "name": "Custom Web App or Mobile App Solution",
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "priceCurrency": "NZD"
+              },
+              "description": "Custom-quoted web or mobile app solution based on business requirements."
+            }
+          ]
+        }
+      }
+    </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@500;600;700&family=Sora:wght@500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="v2.css" />
+  <script defer src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+  <script type="module" src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.11/dist/dotlottie-wc.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script defer src="v2.js"></script>
+</head>
+
+<body>
+  <div id="top"></div>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <div class="bg-layer" aria-hidden="true">
+    <span class="blob blob-a"></span>
+    <span class="blob blob-b"></span>
+    <span class="blob blob-c"></span>
+    <span class="grid-fade"></span>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top">Local Website Partner</a>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#our-work">Our Work</a></li>
+          <li><a href="#how-it-works">How it Works</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a class="contact-link" href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-controls="main-nav" aria-expanded="false"
+        aria-label="Toggle navigation menu">
+        <i data-lucide="menu"></i>
+      </button>
+      <select
+        id="region-flag-select"
+        class="region-flag-select"
+        data-region-select
+        aria-label="Select region"
+        title="Select region"
+      ></select>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode"
+        title="Toggle dark mode">
+        <i data-lucide="sun-moon"></i>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section hero reveal">
+      <div class="container hero-content">
+        <div class="hero-layout">
+          <div>
+            <p class="eyebrow">Website as a Service for Local Businesses</p>
+            <h1>Get Your Business Online Today for Just <span class="hero-price-emphasis"><span data-price="setup-inline">$145</span></span></h1>
+            <p class="hero-price-note"><strong><span data-price="setup-inline">$145</span> one-time setup</strong> + <strong><span data-price="monthly-inline">$5</span>/month ongoing</strong> for
+              hosting and domain.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contact">Get Started for &nbsp;<span data-price="setup-inline">$145</span></a>
+              <a class="btn btn-secondary" href="#pricing">View Pricing</a>
+            </div>
+          </div>
+
+          <aside class="hero-proof reveal" aria-label="Service highlights">
+            <ul class="hero-proof-list">
+              <li class="proof-item">
+                <dotlottie-wc class="check-lottie"
+                  src="https://lottie.host/0b2ea67a-909c-47cc-b58b-1930af04c9cb/Au5bigGBTJ.lottie"
+                  style="width: 28px; height: 28px"></dotlottie-wc>
+                <span>We build, launch, and manage <strong>fast, professional websites</strong> for growing
+                  businesses.</span>
+              </li>
+              <li class="proof-item">
+                <dotlottie-wc class="check-lottie"
+                  src="https://lottie.host/0b2ea67a-909c-47cc-b58b-1930af04c9cb/Au5bigGBTJ.lottie"
+                  style="width: 28px; height: 28px"></dotlottie-wc>
+                <span>No DIY builders, no confusing software, and <u>zero stress</u>.</span>
+              </li>
+              <li class="proof-item">
+                <dotlottie-wc class="check-lottie"
+                  src="https://lottie.host/0b2ea67a-909c-47cc-b58b-1930af04c9cb/Au5bigGBTJ.lottie"
+                  style="width: 28px; height: 28px"></dotlottie-wc>
+                <span>Ongoing essentials are simple: just <strong><span data-price="monthly-inline">$5</span>/month</strong> for hosting and domain.</span>
+              </li>
+            </ul>
+          </aside>
+        </div>
+
+      </div>
+    </section>
+
+    <section
+      id="get-149"
+      class="section get149-section reveal"
+      aria-labelledby="get149-title"
+    >
+      <div class="container get149-shell">
+        <article class="get149-lead reveal">
+          <p class="eyebrow">Included</p>
+          <h2 id="get149-title">What You Get for <span data-price="setup-inline">$145</span></h2>
+          <p class="lead-copy">
+            A complete done-for-you website setup focused on trust, speed, and lead generation for local businesses.
+          </p>
+        </article>
+        <div class="get149-grid">
+          <article class="get-item get149-reveal reveal">
+            <span class="get-icon" aria-hidden="true"><i data-lucide="layout-template"></i></span>
+            <h3>A Complete 4-Page Website</h3>
+            <p>
+              We build out the essential pages your business needs to look professional and win trust: an About page to
+              tell your
+              story, a Services page to show what you do, a clear Pricing section, and a Contact page to capture leads.
+            </p>
+          </article>
+          <article class="get-item get149-reveal reveal">
+            <span class="get-icon" aria-hidden="true"><i data-lucide="search-check"></i></span>
+            <h3>Google-Ready Setup (Basic SEO)</h3>
+            <p>
+              We build your website with the right structure behind the scenes. This helps Google read your site easily,
+              making it
+              more likely that local customers will find you when they search for your services.
+            </p>
+          </article>
+          <article class="get-item get149-reveal reveal">
+            <span class="get-icon" aria-hidden="true"><i data-lucide="gauge"></i></span>
+            <h3>Lightning-Fast Loading Speeds</h3>
+            <p>
+              We host your website on premium, high-speed servers (the same technology trusted by massive global
+              brands). A fast
+              website keeps potential customers from getting frustrated and clicking away to your competitors.
+            </p>
+          </article>
+          <article class="get-item get149-reveal reveal">
+            <span class="get-icon" aria-hidden="true"><i data-lucide="tablet-smartphone"></i></span>
+            <h3>Mobile-Perfect Design</h3>
+            <p>
+              Since most of your customers will be looking you up on their phones, we ensure your new site looks
+              flawless and is easy
+              to navigate on all mobiles and tablets.
+            </p>
+          </article>
+          <article class="get-item get149-reveal reveal">
+            <span class="get-icon" aria-hidden="true"><i data-lucide="mail-check"></i></span>
+            <h3>Direct-to-Inbox Contact Form</h3>
+            <p>
+              We set up a clean, simple contact form that sends customer inquiries straight to your email, making it
+              effortless for
+              you to get new leads.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section our-work-section reveal" id="our-work" aria-labelledby="our-work-title">
+      <div class="container">
+        <p class="eyebrow">Our Work</p>
+        <h2 id="our-work-title">Recent Websites We Have Delivered</h2>
+      </div>
+
+      <div class="our-work-menu menu" aria-label="Our work carousel">
+        <div class="menu--wrapper">
+          <div class="menu--item">
+            <a href="https://example.com/work/1" target="_blank" rel="noopener noreferrer">
+              <figure><img src="images/pexels-anniroenkae-2832439.jpg" alt="Project one preview" loading="lazy" /></figure>
+            </a>
+          </div>
+          <div class="menu--item">
+            <a href="https://example.com/work/2" target="_blank" rel="noopener noreferrer">
+              <figure><img src="images/pexels-didsss-3705648.jpg" alt="Project two preview" loading="lazy" /></figure>
+            </a>
+          </div>
+          <div class="menu--item">
+            <a href="https://example.com/work/3" target="_blank" rel="noopener noreferrer">
+              <figure><img src="images/pexels-didsss-3844788.jpg" alt="Project three preview" loading="lazy" /></figure>
+            </a>
+          </div>
+          <div class="menu--item">
+            <a href="https://example.com/work/4" target="_blank" rel="noopener noreferrer">
+              <figure><img src="images/pexels-magda-ehlers-pexels-1279813.jpg" alt="Project four preview" loading="lazy" /></figure>
+            </a>
+          </div>
+          <div class="menu--item">
+            <a href="https://example.com/work/5" target="_blank" rel="noopener noreferrer">
+              <figure><img src="images/pexels-nullxtract-1173987.jpg" alt="Project five preview" loading="lazy" /></figure>
+            </a>
+          </div>
+          <div class="menu--item">
+            <a href="https://example.com/work/6" target="_blank" rel="noopener noreferrer">
+              <figure><img src="images/pexels-tuesday-temptation-190692-3780104.jpg" alt="Project six preview" loading="lazy" /></figure>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="how-it-works" aria-labelledby="how-title">
+      <div class="container how-shell">
+        <h2 id="how-title">A Professional Website is as Easy as 1, 2, 3.</h2>
+        <p class="steps-intro">Three simple steps. No technical complexity. No long delays.</p>
+        <ol class="steps">
+          <li class="reveal step-card">
+            <span class="step-num">01</span>
+            <span class="step-icon" aria-hidden="true"><i data-lucide="send"></i></span>
+            <h3>The Quick Kickoff</h3>
+            <p>Tell us about your business and share your logo, photos, and key details you want customers to know.</p>
+          </li>
+          <li class="reveal step-card">
+            <span class="step-num">02</span>
+            <span class="step-icon" aria-hidden="true"><i data-lucide="sparkles"></i></span>
+            <h3>We Build It Fast</h3>
+            <p>We build your custom 1-to-4-page site quickly so it loads fast and looks professional from day one.</p>
+          </li>
+          <li class="reveal step-card">
+            <span class="step-num">03</span>
+            <span class="step-icon" aria-hidden="true"><i data-lucide="life-buoy"></i></span>
+            <h3>We Maintain It Forever</h3>
+            <p>Need changes later? Email us to update hours, services, text, or photos. We handle everything for you.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section reveal" id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <h2 id="pricing-title">Honest Pricing for Growing Businesses.</h2>
+        <div class="region-switch">
+          <label for="region-select">Region & Currency</label>
+          <select id="region-select" class="region-select" data-region-select aria-label="Select region and currency"></select>
+          <p class="region-note" id="region-note">Prices shown in your local currency.</p>
+        </div>
+        <p class="section-intro">
+          No hidden fees and no surprise invoices.
+        </p>
+        <ul class="section-points" aria-label="Pricing clarity points">
+          <li><u>Single predictable ongoing cost</u> for hosting/domain coverage.</li>
+          <li><del>Bloated agency retainers</del> replaced with a lean local-first model.</li>
+        </ul>
+        <div class="pricing-offers">
+          <article class="setup-box pricing-combined reveal" aria-label="Required website package">
+            <h3>The "Get Me Online" Setup: <span data-price="setup-full">NZ$145 NZD</span> <span>(One-Time Fee) + <span data-price="monthly-full">NZ$5/mo</span> Website Essentials</span></h3>
+            <p class="price-subtitle"><strong>Both are required together</strong> to launch and keep your website
+              online.</p>
+
+            <div class="price-pill-row" aria-label="Pricing components">
+              <div class="price-pill">
+                <i data-lucide="rocket" aria-hidden="true"></i>
+                <div>
+                  <strong><span data-price="setup-inline">$145</span> one-time</strong>
+                  <p>Design, build, and launch</p>
+                </div>
+              </div>
+              <div class="price-pill">
+                <i data-lucide="server" aria-hidden="true"></i>
+                <div>
+                  <strong><span data-price="monthly-inline">$5</span>/mo ongoing</strong>
+                  <p>Hosting + domain essentials</p>
+                </div>
+              </div>
+            </div>
+
+            <ul class="check-list">
+              <li>1 to 4 pages (for example: Homepage, About, Services, Pricing, Contact)</li>
+              <li>Mobile and tablet optimized</li>
+              <li>Contact form sent straight to your email</li>
+              <li>Fast loading speed and basic SEO setup</li>
+              <li>Web hosting infrastructure, domain renewal management, and SSL uptime coverage</li>
+              <li>$25 flat-fee content updates when needed</li>
+            </ul>
+            <a class="btn btn-secondary" href="#contact">Get Started</a>
+          </article>
+
+          <article class="setup-box shopify-expand reveal" aria-label="Shopify store setup add-on"
+            x-data="{ open: false }">
+            <button class="shopify-summary" type="button" @click="open = !open" x-bind:aria-expanded="open.toString()"
+              aria-controls="shopify-content">
+              <span class="shopify-title">
+                <img class="shopify-icon" src="https://cdn.simpleicons.org/shopify/95BF47" alt="" />
+                Shopify Store Setup <em>(Optional Add-on)</em>
+              </span>
+              <span class="shopify-price"><span data-price="shopify-full">NZ$299 NZD</span> (One-Time Fee)</span>
+            </button>
+            <div id="shopify-content" class="shopify-body" x-cloak x-show="open" x-collapse.duration.420ms>
+                            <div class="divider"></div>
+              <p class="price-subtitle">Perfect if you need a ready-to-sell online store configured professionally from
+                the start.</p>
+              <ul class="check-list">
+                <li>Store setup with core pages, navigation, and checkout flow</li>
+                <li>Theme customization to match your brand look and feel</li>
+                <li>Product collection setup and starter catalog configuration</li>
+                <li>Payment, shipping, and tax baseline setup</li>
+                <li>Basic SEO and mobile optimization for ecommerce browsing</li>
+              </ul>
+              <a class="btn btn-secondary" href="#contact">Start Shopify Setup</a>
+            </div>
+          </article>
+
+          <article class="setup-box app-offer app-expand reveal" aria-label="Custom app solution" x-data="{ open: false }">
+            <button class="shopify-summary app-summary" type="button" @click="open = !open" x-bind:aria-expanded="open.toString()"
+              aria-controls="app-content">
+              <span class="app-title">
+                <i data-lucide="app-window" aria-hidden="true"></i>
+                Custom Web App or Mobile App Solution
+              </span>
+              <span class="shopify-price">Request Quote</span>
+            </button>
+            <div id="app-content" class="shopify-body app-body" x-cloak x-show="open" x-collapse.duration.420ms>
+              <div class="divider"></div>
+              <p class="price-subtitle">
+                For businesses that need advanced functionality beyond a standard website, we design and build tailored
+                app solutions.
+              </p>
+              <ul class="check-list">
+                <li>Discovery call to map your exact workflow and business requirements</li>
+                <li>Custom UX/UI design for web app and/or iOS/Android experience</li>
+                <li>CMS integrations with Strapi, CraftCMS, and WordPress based on your content and publishing needs</li>
+                <li>CRM integrations with HubSpot and Salesforce for lead capture, sales pipeline, and customer lifecycle workflows</li>
+                <li>Secure backend architecture and scalable deployment planning</li>
+                <li>Feature roadmap with phased milestones and delivery timelines</li>
+                <li>Ongoing support options after launch</li>
+              </ul>
+              <a class="btn btn-secondary" href="#contact">Request App Consultation</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <article class="reveal">
+          <h2 id="about-title">Your Local Web Partners.</h2>
+          <p>
+            We started this agency because we saw too many hard-working business owners getting overcharged for websites
+            or stuck in
+            <em>DIY tools</em> that consumed their free time.
+          </p>
+          <p>
+            Our mission is simple: make getting online affordable, fast, and completely hands-off for growing
+            businesses. We focus on
+            <strong>honest pricing</strong>, fast communication, and doing the heavy lifting so you can focus on your
+            customers.
+          </p>
+        </article>
+        <aside class="reveal about-visual">
+          <figure class="developer-card">
+            <img
+              class="developer-photo"
+              src="/images/Gemini_Generated_Image_7d3db47d3db47d3d.png"
+              alt="Photo of your local web developer"
+              loading="lazy" />
+            <figcaption>
+              <strong>Meet Your Developer</strong>
+              <p>A local partner focused on clear communication, practical results, and long-term support.</p>
+            </figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section reveal" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-wrap">
+        <article class="reveal">
+          <h2 id="contact-title">Ready to Get Started?</h2>
+          <p>
+            Fill out the short form below, and we will get back to you within <strong>24 hours</strong> to help you
+            choose the right
+            package, from our <u><span data-price="setup-inline">$145</span> + <span data-price="monthly-inline">$5</span>/month website essentials</u> to <em>Shopify setup</em> or a <strong>custom
+              app solution</strong>.
+          </p>
+        </article>
+        <form class="contact-form reveal" id="lead-form-v2" novalidate>
+          <label for="name-v2">Name</label>
+          <input id="name-v2" name="name" type="text" autocomplete="name" required />
+
+          <label for="email-v2">Email</label>
+          <input id="email-v2" name="email" type="email" autocomplete="email" required />
+
+          <label for="business-v2">Business Name</label>
+          <input id="business-v2" name="business" type="text" autocomplete="organization" required />
+
+          <label for="details-v2">What does your business do?</label>
+          <textarea id="details-v2" name="details" rows="4" required></textarea>
+
+          <button class="btn btn-primary" type="submit">Send Message</button>
+          <p id="form-message-v2" class="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>&copy; <span id="year-v2"></span> Local Website Partner. All rights reserved.</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+</body>
+
+</html>
