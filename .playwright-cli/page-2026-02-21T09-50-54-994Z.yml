@@ -1,0 +1,317 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Local Website Partner" [ref=e5] [cursor=pointer]:
+        - /url: "#top"
+      - navigation "Main navigation" [ref=e6]:
+        - list [ref=e7]:
+          - listitem [ref=e8]:
+            - link "How it Works" [ref=e9] [cursor=pointer]:
+              - /url: "#how-it-works"
+          - listitem [ref=e10]:
+            - link "Pricing" [ref=e11] [cursor=pointer]:
+              - /url: "#pricing"
+          - listitem [ref=e12]:
+            - link "About" [ref=e13] [cursor=pointer]:
+              - /url: "#about"
+          - listitem [ref=e14]:
+            - link "Contact Us" [ref=e15] [cursor=pointer]:
+              - /url: "#contact"
+      - combobox "Select region" [ref=e16] [cursor=pointer]:
+        - option "🇳🇿" [selected]
+        - option "🇨🇦"
+        - option "🇺🇸"
+        - option "🇦🇺"
+        - option "🇪🇺"
+        - option "🇬🇧"
+      - button "Toggle dark mode" [ref=e17] [cursor=pointer]:
+        - img [ref=e18]
+  - main [ref=e24]:
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - paragraph [ref=e29]: Website as a Service for Local Businesses
+        - heading "Get Your Business Online Today for Just $145" [level=1] [ref=e30]:
+          - text: Get Your Business Online Today for Just
+          - generic [ref=e31]: $145
+        - paragraph [ref=e32]:
+          - strong [ref=e33]: $145 one-time setup
+          - text: +
+          - strong [ref=e34]: $5/month ongoing
+          - text: for hosting and domain.
+        - generic [ref=e35]:
+          - link "Get Started for $145" [ref=e36] [cursor=pointer]:
+            - /url: "#contact"
+            - text: Get Started for
+            - generic [ref=e37]: $145
+          - link "View Pricing" [ref=e38] [cursor=pointer]:
+            - /url: "#pricing"
+      - complementary "Service highlights" [ref=e39]:
+        - list [ref=e40]:
+          - listitem [ref=e41]:
+            - generic [ref=e44]:
+              - text: We build, launch, and manage
+              - strong [ref=e45]: fast, professional websites
+              - text: for growing businesses.
+          - listitem [ref=e46]:
+            - generic [ref=e49]: No DIY builders, no confusing software, and zero stress.
+          - listitem [ref=e50]:
+            - generic [ref=e53]:
+              - text: "Ongoing essentials are simple: just"
+              - strong [ref=e54]: $5/month
+              - text: for hosting and domain.
+    - region "What You Get for $145" [ref=e55]:
+      - generic [ref=e56]:
+        - article [ref=e57]:
+          - paragraph [ref=e58]: Included
+          - heading "What You Get for $145" [level=2] [ref=e59]
+          - paragraph [ref=e60]: A complete done-for-you website setup focused on trust, speed, and lead generation for local businesses.
+        - generic [ref=e61]:
+          - article [ref=e62]:
+            - img [ref=e64]
+            - heading "A Complete 4-Page Website" [level=3] [ref=e68]
+            - paragraph [ref=e69]: "We build out the essential pages your business needs to look professional and win trust: an About page to tell your story, a Services page to show what you do, a clear Pricing section, and a Contact page to capture leads."
+          - article [ref=e70]:
+            - img [ref=e72]
+            - heading "Google-Ready Setup (Basic SEO)" [level=3] [ref=e76]
+            - paragraph [ref=e77]: We build your website with the right structure behind the scenes. This helps Google read your site easily, making it more likely that local customers will find you when they search for your services.
+          - article [ref=e78]:
+            - img [ref=e80]
+            - heading "Lightning-Fast Loading Speeds" [level=3] [ref=e83]
+            - paragraph [ref=e84]: We host your website on premium, high-speed servers (the same technology trusted by massive global brands). A fast website keeps potential customers from getting frustrated and clicking away to your competitors.
+          - article [ref=e85]:
+            - img [ref=e87]
+            - heading "Mobile-Perfect Design" [level=3] [ref=e90]
+            - paragraph [ref=e91]: Since most of your customers will be looking you up on their phones, we ensure your new site looks flawless and is easy to navigate on all mobiles and tablets.
+          - article [ref=e92]:
+            - img [ref=e94]
+            - heading "Direct-to-Inbox Contact Form" [level=3] [ref=e98]
+            - paragraph [ref=e99]: We set up a clean, simple contact form that sends customer inquiries straight to your email, making it effortless for you to get new leads.
+    - region "Recent Websites We Have Delivered" [ref=e100]:
+      - generic [ref=e101]:
+        - paragraph [ref=e102]: Our Work
+        - heading "Recent Websites We Have Delivered" [level=2] [ref=e103]
+      - generic [ref=e104]:
+        - generic [ref=e105]:
+          - button "⏸️ Pause" [ref=e106] [cursor=pointer]
+          - button "🔄 Reset" [ref=e107] [cursor=pointer]
+          - button "↔️ Direction" [ref=e108] [cursor=pointer]
+        - generic [ref=e109]: "Speed: 76 px/s"
+        - generic [ref=e112]:
+          - generic [ref=e113]:
+            - img "Credit Card" [ref=e115]
+            - generic [ref=e117]: "// compiled preview • scanner demo /* generated for visual effect – not executed */ const SCAN_WIDTH = 8; const FADE_ZONE = 35; cons t MAX_PARTICLES = 2500; const TRANSITION = 0.05; function clamp(n, a, b) { return Math.max(a, Math.min(b, n)); } function lerp(a, b, t) { return a + (b - a) * t; } const now = () => performance.now( ); function rng(min, max) { return Math.random() * (max - min) + m in; } class Particle0 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a ; } step(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } class Particle1 { constructor(x, y, vx, vy, r, a) { this.x = x; t his.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } s tep(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } clas s Particle2 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } step(d t) { this.x += this.vx * dt; this.y += this.vy * dt; } } const sca nner = { x: Math.floor(window.innerWidth / 2), width: SCAN_WIDTH, glow: 3.5, }; function drawParticle(ctx, p) { ctx.globalAlpha = cl amp(p.a, 0, 1); ctx.drawImage(gradient, p.x - p.r, p.y - p.r, p.r * 2, p.r * 2); } function tick(t) { // requestAnimationFrame(tick)"
+          - generic [ref=e118]:
+            - img "Credit Card" [ref=e120]
+            - generic [ref=e122]: "// compiled preview • scanner demo /* generated for visual effect – not executed */ const SCAN_WIDTH = 8; const FADE_ZONE = 35; cons t MAX_PARTICLES = 2500; const TRANSITION = 0.05; function clamp(n, a, b) { return Math.max(a, Math.min(b, n)); } function lerp(a, b, t) { return a + (b - a) * t; } const now = () => performance.now( ); function rng(min, max) { return Math.random() * (max - min) + m in; } class Particle0 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a ; } step(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } class Particle1 { constructor(x, y, vx, vy, r, a) { this.x = x; t his.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } s tep(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } clas s Particle2 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } step(d t) { this.x += this.vx * dt; this.y += this.vy * dt; } } const sca nner = { x: Math.floor(window.innerWidth / 2), width: SCAN_WIDTH, glow: 3.5, }; function drawParticle(ctx, p) { ctx.globalAlpha = cl amp(p.a, 0, 1); ctx.drawImage(gradient, p.x - p.r, p.y - p.r, p.r * 2, p.r * 2); } function tick(t) { // requestAnimationFrame(tick)"
+          - generic [ref=e123]:
+            - img "Credit Card" [ref=e125]
+            - generic [ref=e127]: "// compiled preview • scanner demo /* generated for visual effect – not executed */ const SCAN_WIDTH = 8; const FADE_ZONE = 35; cons t MAX_PARTICLES = 2500; const TRANSITION = 0.05; function clamp(n, a, b) { return Math.max(a, Math.min(b, n)); } function lerp(a, b, t) { return a + (b - a) * t; } const now = () => performance.now( ); function rng(min, max) { return Math.random() * (max - min) + m in; } class Particle0 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a ; } step(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } class Particle1 { constructor(x, y, vx, vy, r, a) { this.x = x; t his.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } s tep(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } clas s Particle2 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } step(d t) { this.x += this.vx * dt; this.y += this.vy * dt; } } const sca nner = { x: Math.floor(window.innerWidth / 2), width: SCAN_WIDTH, glow: 3.5, }; function drawParticle(ctx, p) { ctx.globalAlpha = cl amp(p.a, 0, 1); ctx.drawImage(gradient, p.x - p.r, p.y - p.r, p.r * 2, p.r * 2); } function tick(t) { // requestAnimationFrame(tick)"
+          - generic [ref=e128]:
+            - img "Credit Card" [ref=e130]
+            - generic [ref=e132]: "// compiled preview • scanner demo /* generated for visual effect – not executed */ const SCAN_WIDTH = 8; const FADE_ZONE = 35; cons t MAX_PARTICLES = 2500; const TRANSITION = 0.05; function clamp(n, a, b) { return Math.max(a, Math.min(b, n)); } function lerp(a, b, t) { return a + (b - a) * t; } const now = () => performance.now( ); function rng(min, max) { return Math.random() * (max - min) + m in; } class Particle0 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a ; } step(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } class Particle1 { constructor(x, y, vx, vy, r, a) { this.x = x; t his.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } s tep(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } clas s Particle2 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } step(d t) { this.x += this.vx * dt; this.y += this.vy * dt; } } const sca nner = { x: Math.floor(window.innerWidth / 2), width: SCAN_WIDTH, glow: 3.5, }; function drawParticle(ctx, p) { ctx.globalAlpha = cl amp(p.a, 0, 1); ctx.drawImage(gradient, p.x - p.r, p.y - p.r, p.r * 2, p.r * 2); } function tick(t) { // requestAnimationFrame(tick)"
+          - generic [ref=e133]:
+            - img "Credit Card" [ref=e135]
+            - generic [ref=e137]: "// compiled preview • scanner demo /* generated for visual effect – not executed */ const SCAN_WIDTH = 8; const FADE_ZONE = 35; cons t MAX_PARTICLES = 2500; const TRANSITION = 0.05; function clamp(n, a, b) { return Math.max(a, Math.min(b, n)); } function lerp(a, b, t) { return a + (b - a) * t; } const now = () => performance.now( ); function rng(min, max) { return Math.random() * (max - min) + m in; } class Particle0 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a ; } step(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } class Particle1 { constructor(x, y, vx, vy, r, a) { this.x = x; t his.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } s tep(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } clas s Particle2 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } step(d t) { this.x += this.vx * dt; this.y += this.vy * dt; } } const sca nner = { x: Math.floor(window.innerWidth / 2), width: SCAN_WIDTH, glow: 3.5, }; function drawParticle(ctx, p) { ctx.globalAlpha = cl amp(p.a, 0, 1); ctx.drawImage(gradient, p.x - p.r, p.y - p.r, p.r * 2, p.r * 2); } function tick(t) { // requestAnimationFrame(tick)"
+          - generic [ref=e138]:
+            - img "Credit Card" [ref=e140]
+            - generic [ref=e142]: "// compiled preview • scanner demo /* generated for visual effect – not executed */ const SCAN_WIDTH = 8; const FADE_ZONE = 35; cons t MAX_PARTICLES = 2500; const TRANSITION = 0.05; function clamp(n, a, b) { return Math.max(a, Math.min(b, n)); } function lerp(a, b, t) { return a + (b - a) * t; } const now = () => performance.now( ); function rng(min, max) { return Math.random() * (max - min) + m in; } class Particle0 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a ; } step(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } class Particle1 { constructor(x, y, vx, vy, r, a) { this.x = x; t his.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } s tep(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } clas s Particle2 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } step(d t) { this.x += this.vx * dt; this.y += this.vy * dt; } } const sca nner = { x: Math.floor(window.innerWidth / 2), width: SCAN_WIDTH, glow: 3.5, }; function drawParticle(ctx, p) { ctx.globalAlpha = cl amp(p.a, 0, 1); ctx.drawImage(gradient, p.x - p.r, p.y - p.r, p.r * 2, p.r * 2); } function tick(t) { // requestAnimationFrame(tick)"
+          - generic [ref=e143]:
+            - img "Credit Card" [ref=e145]
+            - generic [ref=e147]: "// compiled preview • scanner demo /* generated for visual effect – not executed */ const SCAN_WIDTH = 8; const FADE_ZONE = 35; cons t MAX_PARTICLES = 2500; const TRANSITION = 0.05; function clamp(n, a, b) { return Math.max(a, Math.min(b, n)); } function lerp(a, b, t) { return a + (b - a) * t; } const now = () => performance.now( ); function rng(min, max) { return Math.random() * (max - min) + m in; } class Particle0 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a ; } step(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } class Particle1 { constructor(x, y, vx, vy, r, a) { this.x = x; t his.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } s tep(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } clas s Particle2 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } step(d t) { this.x += this.vx * dt; this.y += this.vy * dt; } } const sca nner = { x: Math.floor(window.innerWidth / 2), width: SCAN_WIDTH, glow: 3.5, }; function drawParticle(ctx, p) { ctx.globalAlpha = cl amp(p.a, 0, 1); ctx.drawImage(gradient, p.x - p.r, p.y - p.r, p.r * 2, p.r * 2); } function tick(t) { // requestAnimationFrame(tick)"
+          - generic [ref=e148]:
+            - img "Credit Card" [ref=e150]
+            - generic [ref=e152]: "// compiled preview • scanner demo /* generated for visual effect – not executed */ const SCAN_WIDTH = 8; const FADE_ZONE = 35; cons t MAX_PARTICLES = 2500; const TRANSITION = 0.05; function clamp(n, a, b) { return Math.max(a, Math.min(b, n)); } function lerp(a, b, t) { return a + (b - a) * t; } const now = () => performance.now( ); function rng(min, max) { return Math.random() * (max - min) + m in; } class Particle0 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a ; } step(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } class Particle1 { constructor(x, y, vx, vy, r, a) { this.x = x; t his.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } s tep(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } clas s Particle2 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } step(d t) { this.x += this.vx * dt; this.y += this.vy * dt; } } const sca nner = { x: Math.floor(window.innerWidth / 2), width: SCAN_WIDTH, glow: 3.5, }; function drawParticle(ctx, p) { ctx.globalAlpha = cl amp(p.a, 0, 1); ctx.drawImage(gradient, p.x - p.r, p.y - p.r, p.r * 2, p.r * 2); } function tick(t) { // requestAnimationFrame(tick)"
+          - generic [ref=e153]:
+            - img "Credit Card" [ref=e155]
+            - generic [ref=e157]: "// compiled preview • scanner demo /* generated for visual effect – not executed */ const SCAN_WIDTH = 8; const FADE_ZONE = 35; cons t MAX_PARTICLES = 2500; const TRANSITION = 0.05; function clamp(n, a, b) { return Math.max(a, Math.min(b, n)); } function lerp(a, b, t) { return a + (b - a) * t; } const now = () => performance.now( ); function rng(min, max) { return Math.random() * (max - min) + m in; } class Particle0 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a ; } step(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } class Particle1 { constructor(x, y, vx, vy, r, a) { this.x = x; t his.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } s tep(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } clas s Particle2 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } step(d t) { this.x += this.vx * dt; this.y += this.vy * dt; } } const sca nner = { x: Math.floor(window.innerWidth / 2), width: SCAN_WIDTH, glow: 3.5, }; function drawParticle(ctx, p) { ctx.globalAlpha = cl amp(p.a, 0, 1); ctx.drawImage(gradient, p.x - p.r, p.y - p.r, p.r * 2, p.r * 2); } function tick(t) { // requestAnimationFrame(tick)"
+          - generic [ref=e158]:
+            - img "Credit Card" [ref=e160]
+            - generic [ref=e162]: "// compiled preview • scanner demo /* generated for visual effect – not executed */ const SCAN_WIDTH = 8; const FADE_ZONE = 35; cons t MAX_PARTICLES = 2500; const TRANSITION = 0.05; function clamp(n, a, b) { return Math.max(a, Math.min(b, n)); } function lerp(a, b, t) { return a + (b - a) * t; } const now = () => performance.now( ); function rng(min, max) { return Math.random() * (max - min) + m in; } class Particle0 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a ; } step(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } class Particle1 { constructor(x, y, vx, vy, r, a) { this.x = x; t his.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } s tep(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } clas s Particle2 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } step(d t) { this.x += this.vx * dt; this.y += this.vy * dt; } } const sca nner = { x: Math.floor(window.innerWidth / 2), width: SCAN_WIDTH, glow: 3.5, }; function drawParticle(ctx, p) { ctx.globalAlpha = cl amp(p.a, 0, 1); ctx.drawImage(gradient, p.x - p.r, p.y - p.r, p.r * 2, p.r * 2); } function tick(t) { // requestAnimationFrame(tick)"
+          - generic [ref=e163]:
+            - img "Credit Card" [ref=e165]
+            - generic [ref=e167]: "// compiled preview • scanner demo /* generated for visual effect – not executed */ const SCAN_WIDTH = 8; const FADE_ZONE = 35; cons t MAX_PARTICLES = 2500; const TRANSITION = 0.05; function clamp(n, a, b) { return Math.max(a, Math.min(b, n)); } function lerp(a, b, t) { return a + (b - a) * t; } const now = () => performance.now( ); function rng(min, max) { return Math.random() * (max - min) + m in; } class Particle0 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a ; } step(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } class Particle1 { constructor(x, y, vx, vy, r, a) { this.x = x; t his.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } s tep(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } clas s Particle2 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } step(d t) { this.x += this.vx * dt; this.y += this.vy * dt; } } const sca nner = { x: Math.floor(window.innerWidth / 2), width: SCAN_WIDTH, glow: 3.5, }; function drawParticle(ctx, p) { ctx.globalAlpha = cl amp(p.a, 0, 1); ctx.drawImage(gradient, p.x - p.r, p.y - p.r, p.r * 2, p.r * 2); } function tick(t) { // requestAnimationFrame(tick)"
+          - generic [ref=e168]:
+            - img "Credit Card" [ref=e170]
+            - generic [ref=e172]: "// compiled preview • scanner demo /* generated for visual effect – not executed */ const SCAN_WIDTH = 8; const FADE_ZONE = 35; cons t MAX_PARTICLES = 2500; const TRANSITION = 0.05; function clamp(n, a, b) { return Math.max(a, Math.min(b, n)); } function lerp(a, b, t) { return a + (b - a) * t; } const now = () => performance.now( ); function rng(min, max) { return Math.random() * (max - min) + m in; } class Particle0 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a ; } step(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } class Particle1 { constructor(x, y, vx, vy, r, a) { this.x = x; t his.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } s tep(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } clas s Particle2 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } step(d t) { this.x += this.vx * dt; this.y += this.vy * dt; } } const sca nner = { x: Math.floor(window.innerWidth / 2), width: SCAN_WIDTH, glow: 3.5, }; function drawParticle(ctx, p) { ctx.globalAlpha = cl amp(p.a, 0, 1); ctx.drawImage(gradient, p.x - p.r, p.y - p.r, p.r * 2, p.r * 2); } function tick(t) { // requestAnimationFrame(tick)"
+          - generic [ref=e173]:
+            - img "Credit Card" [ref=e175]
+            - generic [ref=e177]: "// compiled preview • scanner demo /* generated for visual effect – not executed */ const SCAN_WIDTH = 8; const FADE_ZONE = 35; cons t MAX_PARTICLES = 2500; const TRANSITION = 0.05; function clamp(n, a, b) { return Math.max(a, Math.min(b, n)); } function lerp(a, b, t) { return a + (b - a) * t; } const now = () => performance.now( ); function rng(min, max) { return Math.random() * (max - min) + m in; } class Particle0 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a ; } step(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } class Particle1 { constructor(x, y, vx, vy, r, a) { this.x = x; t his.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } s tep(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } clas s Particle2 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } step(d t) { this.x += this.vx * dt; this.y += this.vy * dt; } } const sca nner = { x: Math.floor(window.innerWidth / 2), width: SCAN_WIDTH, glow: 3.5, }; function drawParticle(ctx, p) { ctx.globalAlpha = cl amp(p.a, 0, 1); ctx.drawImage(gradient, p.x - p.r, p.y - p.r, p.r * 2, p.r * 2); } function tick(t) { // requestAnimationFrame(tick)"
+          - generic [ref=e178]:
+            - img "Credit Card" [ref=e180]
+            - generic [ref=e182]: "// compiled preview • scanner demo /* generated for visual effect – not executed */ const SCAN_WIDTH = 8; const FADE_ZONE = 35; cons t MAX_PARTICLES = 2500; const TRANSITION = 0.05; function clamp(n, a, b) { return Math.max(a, Math.min(b, n)); } function lerp(a, b, t) { return a + (b - a) * t; } const now = () => performance.now( ); function rng(min, max) { return Math.random() * (max - min) + m in; } class Particle0 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a ; } step(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } class Particle1 { constructor(x, y, vx, vy, r, a) { this.x = x; t his.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } s tep(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } clas s Particle2 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } step(d t) { this.x += this.vx * dt; this.y += this.vy * dt; } } const sca nner = { x: Math.floor(window.innerWidth / 2), width: SCAN_WIDTH, glow: 3.5, }; function drawParticle(ctx, p) { ctx.globalAlpha = cl amp(p.a, 0, 1); ctx.drawImage(gradient, p.x - p.r, p.y - p.r, p.r * 2, p.r * 2); } function tick(t) { // requestAnimationFrame(tick)"
+          - generic [ref=e183]:
+            - img "Credit Card" [ref=e185]
+            - generic [ref=e187]: "// compiled preview • scanner demo /* generated for visual effect – not executed */ const SCAN_WIDTH = 8; const FADE_ZONE = 35; cons t MAX_PARTICLES = 2500; const TRANSITION = 0.05; function clamp(n, a, b) { return Math.max(a, Math.min(b, n)); } function lerp(a, b, t) { return a + (b - a) * t; } const now = () => performance.now( ); function rng(min, max) { return Math.random() * (max - min) + m in; } class Particle0 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a ; } step(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } class Particle1 { constructor(x, y, vx, vy, r, a) { this.x = x; t his.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } s tep(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } clas s Particle2 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } step(d t) { this.x += this.vx * dt; this.y += this.vy * dt; } } const sca nner = { x: Math.floor(window.innerWidth / 2), width: SCAN_WIDTH, glow: 3.5, }; function drawParticle(ctx, p) { ctx.globalAlpha = cl amp(p.a, 0, 1); ctx.drawImage(gradient, p.x - p.r, p.y - p.r, p.r * 2, p.r * 2); } function tick(t) { // requestAnimationFrame(tick)"
+          - generic [ref=e188]:
+            - img "Credit Card" [ref=e190]
+            - generic [ref=e192]: "// compiled preview • scanner demo /* generated for visual effect – not executed */ const SCAN_WIDTH = 8; const FADE_ZONE = 35; cons t MAX_PARTICLES = 2500; const TRANSITION = 0.05; function clamp(n, a, b) { return Math.max(a, Math.min(b, n)); } function lerp(a, b, t) { return a + (b - a) * t; } const now = () => performance.now( ); function rng(min, max) { return Math.random() * (max - min) + m in; } class Particle0 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a ; } step(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } class Particle1 { constructor(x, y, vx, vy, r, a) { this.x = x; t his.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } s tep(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } clas s Particle2 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } step(d t) { this.x += this.vx * dt; this.y += this.vy * dt; } } const sca nner = { x: Math.floor(window.innerWidth / 2), width: SCAN_WIDTH, glow: 3.5, }; function drawParticle(ctx, p) { ctx.globalAlpha = cl amp(p.a, 0, 1); ctx.drawImage(gradient, p.x - p.r, p.y - p.r, p.r * 2, p.r * 2); } function tick(t) { // requestAnimationFrame(tick)"
+          - generic [ref=e193]:
+            - img "Credit Card" [ref=e195]
+            - generic [ref=e197]: "// compiled preview • scanner demo /* generated for visual effect – not executed */ const SCAN_WIDTH = 8; const FADE_ZONE = 35; cons t MAX_PARTICLES = 2500; const TRANSITION = 0.05; function clamp(n, a, b) { return Math.max(a, Math.min(b, n)); } function lerp(a, b, t) { return a + (b - a) * t; } const now = () => performance.now( ); function rng(min, max) { return Math.random() * (max - min) + m in; } class Particle0 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a ; } step(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } class Particle1 { constructor(x, y, vx, vy, r, a) { this.x = x; t his.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } s tep(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } clas s Particle2 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } step(d t) { this.x += this.vx * dt; this.y += this.vy * dt; } } const sca nner = { x: Math.floor(window.innerWidth / 2), width: SCAN_WIDTH, glow: 3.5, }; function drawParticle(ctx, p) { ctx.globalAlpha = cl amp(p.a, 0, 1); ctx.drawImage(gradient, p.x - p.r, p.y - p.r, p.r * 2, p.r * 2); } function tick(t) { // requestAnimationFrame(tick)"
+          - generic [ref=e198]:
+            - img "Credit Card" [ref=e200]
+            - generic [ref=e202]: "// compiled preview • scanner demo /* generated for visual effect – not executed */ const SCAN_WIDTH = 8; const FADE_ZONE = 35; cons t MAX_PARTICLES = 2500; const TRANSITION = 0.05; function clamp(n, a, b) { return Math.max(a, Math.min(b, n)); } function lerp(a, b, t) { return a + (b - a) * t; } const now = () => performance.now( ); function rng(min, max) { return Math.random() * (max - min) + m in; } class Particle0 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a ; } step(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } class Particle1 { constructor(x, y, vx, vy, r, a) { this.x = x; t his.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } s tep(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } clas s Particle2 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } step(d t) { this.x += this.vx * dt; this.y += this.vy * dt; } } const sca nner = { x: Math.floor(window.innerWidth / 2), width: SCAN_WIDTH, glow: 3.5, }; function drawParticle(ctx, p) { ctx.globalAlpha = cl amp(p.a, 0, 1); ctx.drawImage(gradient, p.x - p.r, p.y - p.r, p.r * 2, p.r * 2); } function tick(t) { // requestAnimationFrame(tick)"
+          - generic [ref=e203]:
+            - img "Credit Card" [ref=e205]
+            - generic [ref=e207]: "// compiled preview • scanner demo /* generated for visual effect – not executed */ const SCAN_WIDTH = 8; const FADE_ZONE = 35; cons t MAX_PARTICLES = 2500; const TRANSITION = 0.05; function clamp(n, a, b) { return Math.max(a, Math.min(b, n)); } function lerp(a, b, t) { return a + (b - a) * t; } const now = () => performance.now( ); function rng(min, max) { return Math.random() * (max - min) + m in; } class Particle0 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a ; } step(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } class Particle1 { constructor(x, y, vx, vy, r, a) { this.x = x; t his.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } s tep(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } clas s Particle2 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } step(d t) { this.x += this.vx * dt; this.y += this.vy * dt; } } const sca nner = { x: Math.floor(window.innerWidth / 2), width: SCAN_WIDTH, glow: 3.5, }; function drawParticle(ctx, p) { ctx.globalAlpha = cl amp(p.a, 0, 1); ctx.drawImage(gradient, p.x - p.r, p.y - p.r, p.r * 2, p.r * 2); } function tick(t) { // requestAnimationFrame(tick)"
+          - generic [ref=e208]:
+            - img "Credit Card" [ref=e210]
+            - generic [ref=e212]: "// compiled preview • scanner demo /* generated for visual effect – not executed */ const SCAN_WIDTH = 8; const FADE_ZONE = 35; cons t MAX_PARTICLES = 2500; const TRANSITION = 0.05; function clamp(n, a, b) { return Math.max(a, Math.min(b, n)); } function lerp(a, b, t) { return a + (b - a) * t; } const now = () => performance.now( ); function rng(min, max) { return Math.random() * (max - min) + m in; } class Particle0 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a ; } step(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } class Particle1 { constructor(x, y, vx, vy, r, a) { this.x = x; t his.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } s tep(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } clas s Particle2 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } step(d t) { this.x += this.vx * dt; this.y += this.vy * dt; } } const sca nner = { x: Math.floor(window.innerWidth / 2), width: SCAN_WIDTH, glow: 3.5, }; function drawParticle(ctx, p) { ctx.globalAlpha = cl amp(p.a, 0, 1); ctx.drawImage(gradient, p.x - p.r, p.y - p.r, p.r * 2, p.r * 2); } function tick(t) { // requestAnimationFrame(tick)"
+          - generic [ref=e213]:
+            - img "Credit Card" [ref=e215]
+            - generic [ref=e217]: "// compiled preview • scanner demo /* generated for visual effect – not executed */ const SCAN_WIDTH = 8; const FADE_ZONE = 35; cons t MAX_PARTICLES = 2500; const TRANSITION = 0.05; function clamp(n, a, b) { return Math.max(a, Math.min(b, n)); } function lerp(a, b, t) { return a + (b - a) * t; } const now = () => performance.now( ); function rng(min, max) { return Math.random() * (max - min) + m in; } class Particle0 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a ; } step(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } class Particle1 { constructor(x, y, vx, vy, r, a) { this.x = x; t his.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } s tep(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } clas s Particle2 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } step(d t) { this.x += this.vx * dt; this.y += this.vy * dt; } } const sca nner = { x: Math.floor(window.innerWidth / 2), width: SCAN_WIDTH, glow: 3.5, }; function drawParticle(ctx, p) { ctx.globalAlpha = cl amp(p.a, 0, 1); ctx.drawImage(gradient, p.x - p.r, p.y - p.r, p.r * 2, p.r * 2); } function tick(t) { // requestAnimationFrame(tick)"
+          - generic [ref=e218]:
+            - img "Credit Card" [ref=e220]
+            - generic [ref=e222]: "// compiled preview • scanner demo /* generated for visual effect – not executed */ const SCAN_WIDTH = 8; const FADE_ZONE = 35; cons t MAX_PARTICLES = 2500; const TRANSITION = 0.05; function clamp(n, a, b) { return Math.max(a, Math.min(b, n)); } function lerp(a, b, t) { return a + (b - a) * t; } const now = () => performance.now( ); function rng(min, max) { return Math.random() * (max - min) + m in; } class Particle0 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a ; } step(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } class Particle1 { constructor(x, y, vx, vy, r, a) { this.x = x; t his.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } s tep(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } clas s Particle2 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } step(d t) { this.x += this.vx * dt; this.y += this.vy * dt; } } const sca nner = { x: Math.floor(window.innerWidth / 2), width: SCAN_WIDTH, glow: 3.5, }; function drawParticle(ctx, p) { ctx.globalAlpha = cl amp(p.a, 0, 1); ctx.drawImage(gradient, p.x - p.r, p.y - p.r, p.r * 2, p.r * 2); } function tick(t) { // requestAnimationFrame(tick)"
+          - generic [ref=e223]:
+            - img "Credit Card" [ref=e225]
+            - generic [ref=e227]: "// compiled preview • scanner demo /* generated for visual effect – not executed */ const SCAN_WIDTH = 8; const FADE_ZONE = 35; cons t MAX_PARTICLES = 2500; const TRANSITION = 0.05; function clamp(n, a, b) { return Math.max(a, Math.min(b, n)); } function lerp(a, b, t) { return a + (b - a) * t; } const now = () => performance.now( ); function rng(min, max) { return Math.random() * (max - min) + m in; } class Particle0 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a ; } step(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } class Particle1 { constructor(x, y, vx, vy, r, a) { this.x = x; t his.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } s tep(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } clas s Particle2 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } step(d t) { this.x += this.vx * dt; this.y += this.vy * dt; } } const sca nner = { x: Math.floor(window.innerWidth / 2), width: SCAN_WIDTH, glow: 3.5, }; function drawParticle(ctx, p) { ctx.globalAlpha = cl amp(p.a, 0, 1); ctx.drawImage(gradient, p.x - p.r, p.y - p.r, p.r * 2, p.r * 2); } function tick(t) { // requestAnimationFrame(tick)"
+          - generic [ref=e228]:
+            - img "Credit Card" [ref=e230]
+            - generic [ref=e232]: "// compiled preview • scanner demo /* generated for visual effect – not executed */ const SCAN_WIDTH = 8; const FADE_ZONE = 35; cons t MAX_PARTICLES = 2500; const TRANSITION = 0.05; function clamp(n, a, b) { return Math.max(a, Math.min(b, n)); } function lerp(a, b, t) { return a + (b - a) * t; } const now = () => performance.now( ); function rng(min, max) { return Math.random() * (max - min) + m in; } class Particle0 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a ; } step(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } class Particle1 { constructor(x, y, vx, vy, r, a) { this.x = x; t his.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } s tep(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } clas s Particle2 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } step(d t) { this.x += this.vx * dt; this.y += this.vy * dt; } } const sca nner = { x: Math.floor(window.innerWidth / 2), width: SCAN_WIDTH, glow: 3.5, }; function drawParticle(ctx, p) { ctx.globalAlpha = cl amp(p.a, 0, 1); ctx.drawImage(gradient, p.x - p.r, p.y - p.r, p.r * 2, p.r * 2); } function tick(t) { // requestAnimationFrame(tick)"
+          - generic [ref=e233]:
+            - img "Credit Card" [ref=e235]
+            - generic [ref=e237]: "// compiled preview • scanner demo /* generated for visual effect – not executed */ const SCAN_WIDTH = 8; const FADE_ZONE = 35; cons t MAX_PARTICLES = 2500; const TRANSITION = 0.05; function clamp(n, a, b) { return Math.max(a, Math.min(b, n)); } function lerp(a, b, t) { return a + (b - a) * t; } const now = () => performance.now( ); function rng(min, max) { return Math.random() * (max - min) + m in; } class Particle0 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a ; } step(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } class Particle1 { constructor(x, y, vx, vy, r, a) { this.x = x; t his.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } s tep(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } clas s Particle2 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } step(d t) { this.x += this.vx * dt; this.y += this.vy * dt; } } const sca nner = { x: Math.floor(window.innerWidth / 2), width: SCAN_WIDTH, glow: 3.5, }; function drawParticle(ctx, p) { ctx.globalAlpha = cl amp(p.a, 0, 1); ctx.drawImage(gradient, p.x - p.r, p.y - p.r, p.r * 2, p.r * 2); } function tick(t) { // requestAnimationFrame(tick)"
+          - generic [ref=e238]:
+            - img "Credit Card" [ref=e240]
+            - generic [ref=e242]: "// compiled preview • scanner demo /* generated for visual effect – not executed */ const SCAN_WIDTH = 8; const FADE_ZONE = 35; cons t MAX_PARTICLES = 2500; const TRANSITION = 0.05; function clamp(n, a, b) { return Math.max(a, Math.min(b, n)); } function lerp(a, b, t) { return a + (b - a) * t; } const now = () => performance.now( ); function rng(min, max) { return Math.random() * (max - min) + m in; } class Particle0 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a ; } step(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } class Particle1 { constructor(x, y, vx, vy, r, a) { this.x = x; t his.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } s tep(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } clas s Particle2 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } step(d t) { this.x += this.vx * dt; this.y += this.vy * dt; } } const sca nner = { x: Math.floor(window.innerWidth / 2), width: SCAN_WIDTH, glow: 3.5, }; function drawParticle(ctx, p) { ctx.globalAlpha = cl amp(p.a, 0, 1); ctx.drawImage(gradient, p.x - p.r, p.y - p.r, p.r * 2, p.r * 2); } function tick(t) { // requestAnimationFrame(tick)"
+          - generic [ref=e243]:
+            - img "Credit Card" [ref=e245]
+            - generic [ref=e247]: "// compiled preview • scanner demo /* generated for visual effect – not executed */ const SCAN_WIDTH = 8; const FADE_ZONE = 35; cons t MAX_PARTICLES = 2500; const TRANSITION = 0.05; function clamp(n, a, b) { return Math.max(a, Math.min(b, n)); } function lerp(a, b, t) { return a + (b - a) * t; } const now = () => performance.now( ); function rng(min, max) { return Math.random() * (max - min) + m in; } class Particle0 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a ; } step(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } class Particle1 { constructor(x, y, vx, vy, r, a) { this.x = x; t his.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } s tep(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } clas s Particle2 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } step(d t) { this.x += this.vx * dt; this.y += this.vy * dt; } } const sca nner = { x: Math.floor(window.innerWidth / 2), width: SCAN_WIDTH, glow: 3.5, }; function drawParticle(ctx, p) { ctx.globalAlpha = cl amp(p.a, 0, 1); ctx.drawImage(gradient, p.x - p.r, p.y - p.r, p.r * 2, p.r * 2); } function tick(t) { // requestAnimationFrame(tick)"
+          - generic [ref=e248]:
+            - img "Credit Card" [ref=e250]
+            - generic [ref=e252]: "// compiled preview • scanner demo /* generated for visual effect – not executed */ const SCAN_WIDTH = 8; const FADE_ZONE = 35; cons t MAX_PARTICLES = 2500; const TRANSITION = 0.05; function clamp(n, a, b) { return Math.max(a, Math.min(b, n)); } function lerp(a, b, t) { return a + (b - a) * t; } const now = () => performance.now( ); function rng(min, max) { return Math.random() * (max - min) + m in; } class Particle0 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a ; } step(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } class Particle1 { constructor(x, y, vx, vy, r, a) { this.x = x; t his.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } s tep(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } clas s Particle2 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } step(d t) { this.x += this.vx * dt; this.y += this.vy * dt; } } const sca nner = { x: Math.floor(window.innerWidth / 2), width: SCAN_WIDTH, glow: 3.5, }; function drawParticle(ctx, p) { ctx.globalAlpha = cl amp(p.a, 0, 1); ctx.drawImage(gradient, p.x - p.r, p.y - p.r, p.r * 2, p.r * 2); } function tick(t) { // requestAnimationFrame(tick)"
+          - generic [ref=e253]:
+            - img "Credit Card" [ref=e255]
+            - generic [ref=e257]: "// compiled preview • scanner demo /* generated for visual effect – not executed */ const SCAN_WIDTH = 8; const FADE_ZONE = 35; cons t MAX_PARTICLES = 2500; const TRANSITION = 0.05; function clamp(n, a, b) { return Math.max(a, Math.min(b, n)); } function lerp(a, b, t) { return a + (b - a) * t; } const now = () => performance.now( ); function rng(min, max) { return Math.random() * (max - min) + m in; } class Particle0 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a ; } step(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } class Particle1 { constructor(x, y, vx, vy, r, a) { this.x = x; t his.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } s tep(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } clas s Particle2 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } step(d t) { this.x += this.vx * dt; this.y += this.vy * dt; } } const sca nner = { x: Math.floor(window.innerWidth / 2), width: SCAN_WIDTH, glow: 3.5, }; function drawParticle(ctx, p) { ctx.globalAlpha = cl amp(p.a, 0, 1); ctx.drawImage(gradient, p.x - p.r, p.y - p.r, p.r * 2, p.r * 2); } function tick(t) { // requestAnimationFrame(tick)"
+          - generic [ref=e258]:
+            - img "Credit Card" [ref=e260]
+            - generic [ref=e262]: "// compiled preview • scanner demo /* generated for visual effect – not executed */ const SCAN_WIDTH = 8; const FADE_ZONE = 35; cons t MAX_PARTICLES = 2500; const TRANSITION = 0.05; function clamp(n, a, b) { return Math.max(a, Math.min(b, n)); } function lerp(a, b, t) { return a + (b - a) * t; } const now = () => performance.now( ); function rng(min, max) { return Math.random() * (max - min) + m in; } class Particle0 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a ; } step(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } class Particle1 { constructor(x, y, vx, vy, r, a) { this.x = x; t his.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } s tep(dt) { this.x += this.vx * dt; this.y += this.vy * dt; } } clas s Particle2 { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } step(d t) { this.x += this.vx * dt; this.y += this.vy * dt; } } const sca nner = { x: Math.floor(window.innerWidth / 2), width: SCAN_WIDTH, glow: 3.5, }; function drawParticle(ctx, p) { ctx.globalAlpha = cl amp(p.a, 0, 1); ctx.drawImage(gradient, p.x - p.r, p.y - p.r, p.r * 2, p.r * 2); } function tick(t) { // requestAnimationFrame(tick)"
+        - generic [ref=e263]:
+          - text: Inspired by
+          - link "@evervault.com" [ref=e264] [cursor=pointer]:
+            - /url: https://evervault.com/
+    - region "A Professional Website is as Easy as 1, 2, 3." [ref=e265]:
+      - generic [ref=e266]:
+        - heading "A Professional Website is as Easy as 1, 2, 3." [level=2] [ref=e267]
+        - paragraph [ref=e268]: Three simple steps. No technical complexity. No long delays.
+        - list [ref=e269]:
+          - listitem [ref=e270]:
+            - generic [ref=e271]: "01"
+            - img [ref=e273]
+            - heading "The Quick Kickoff" [level=3] [ref=e276]
+            - paragraph [ref=e277]: Tell us about your business and share your logo, photos, and key details you want customers to know.
+          - listitem [ref=e278]:
+            - generic [ref=e279]: "02"
+            - img [ref=e281]
+            - heading "We Build It Fast" [level=3] [ref=e283]
+            - paragraph [ref=e284]: We build your custom 1-to-4-page site quickly so it loads fast and looks professional from day one.
+          - listitem [ref=e285]:
+            - generic [ref=e286]: "03"
+            - img [ref=e288]
+            - heading "We Maintain It Forever" [level=3] [ref=e295]
+            - paragraph [ref=e296]: Need changes later? Email us to update hours, services, text, or photos. We handle everything for you.
+    - region "Honest Pricing for Growing Businesses." [ref=e297]:
+      - generic [ref=e298]:
+        - heading "Honest Pricing for Growing Businesses." [level=2] [ref=e299]
+        - generic [ref=e300]:
+          - generic [ref=e301]: Region & Currency
+          - combobox "Select region and currency" [ref=e302]:
+            - option "New Zealand (NZD)" [selected]
+            - option "Canada (CAD)"
+            - option "United States (USD)"
+            - option "Australia (AUD)"
+            - option "Europe (EUR)"
+            - option "United Kingdom (GBP)"
+          - paragraph [ref=e303]: Prices shown in New Zealand (NZD).
+        - paragraph [ref=e304]: No hidden fees and no surprise invoices.
+        - list "Pricing clarity points" [ref=e305]:
+          - listitem [ref=e306]: Single predictable ongoing cost for hosting/domain coverage.
+          - listitem [ref=e307]:
+            - deletion [ref=e308]: Bloated agency retainers
+            - text: replaced with a lean local-first model.
+        - generic [ref=e309]:
+          - article "Required website package" [ref=e310]:
+            - 'heading "The \"Get Me Online\" Setup: $145 NZD (One-Time Fee) + $5/mo Website Essentials" [level=3] [ref=e311]':
+              - text: "The \"Get Me Online\" Setup: $145 NZD"
+              - generic [ref=e312]: (One-Time Fee) + $5/mo Website Essentials
+            - paragraph [ref=e313]:
+              - strong [ref=e314]: Both are required together
+              - text: to launch and keep your website online.
+            - generic "Pricing components" [ref=e315]:
+              - generic [ref=e316]:
+                - img [ref=e317]
+                - generic [ref=e322]:
+                  - strong [ref=e323]: $145 one-time
+                  - paragraph [ref=e324]: Design, build, and launch
+              - generic [ref=e325]:
+                - img [ref=e326]
+                - generic [ref=e329]:
+                  - strong [ref=e330]: $5/mo ongoing
+                  - paragraph [ref=e331]: Hosting + domain essentials
+            - list [ref=e332]:
+              - listitem [ref=e333]: "1 to 4 pages (for example: Homepage, About, Services, Pricing, Contact)"
+              - listitem [ref=e334]: Mobile and tablet optimized
+              - listitem [ref=e335]: Contact form sent straight to your email
+              - listitem [ref=e336]: Fast loading speed and basic SEO setup
+              - listitem [ref=e337]: Web hosting infrastructure, domain renewal management, and SSL uptime coverage
+              - listitem [ref=e338]: $25 flat-fee content updates when needed
+            - link "Get Started" [ref=e339] [cursor=pointer]:
+              - /url: "#contact"
+          - article "Shopify store setup add-on" [ref=e340]:
+            - button "Shopify Store Setup (Optional Add-on) $299 NZD (One-Time Fee)" [ref=e341] [cursor=pointer]:
+              - generic [ref=e342]:
+                - text: Shopify Store Setup
+                - emphasis [ref=e343]: (Optional Add-on)
+              - generic [ref=e344]: $299 NZD (One-Time Fee)
+          - article "Custom app solution" [ref=e345]:
+            - button "Custom Web App or Mobile App Solution Request Quote" [ref=e346] [cursor=pointer]:
+              - generic [ref=e347]:
+                - img [ref=e348]
+                - text: Custom Web App or Mobile App Solution
+              - generic [ref=e350]: Request Quote
+    - region "Your Local Web Partners." [ref=e351]:
+      - generic [ref=e352]:
+        - article [ref=e353]:
+          - heading "Your Local Web Partners." [level=2] [ref=e354]
+          - paragraph [ref=e355]:
+            - text: We started this agency because we saw too many hard-working business owners getting overcharged for websites or stuck in
+            - emphasis [ref=e356]: DIY tools
+            - text: that consumed their free time.
+          - paragraph [ref=e357]:
+            - text: "Our mission is simple: make getting online affordable, fast, and completely hands-off for growing businesses. We focus on"
+            - strong [ref=e358]: honest pricing
+            - text: ", fast communication, and doing the heavy lifting so you can focus on your customers."
+        - complementary [ref=e359]
+    - region "Ready to Get Started?" [ref=e360]:
+      - generic [ref=e361]:
+        - article [ref=e362]:
+          - heading "Ready to Get Started?" [level=2] [ref=e363]
+          - paragraph [ref=e364]:
+            - text: Fill out the short form below, and we will get back to you within
+            - strong [ref=e365]: 24 hours
+            - text: to help you choose the right package, from our
+            - generic [ref=e366]: $145 + $5/month website essentials
+            - text: to
+            - emphasis [ref=e367]: Shopify setup
+            - text: or a
+            - strong [ref=e368]: custom app solution
+            - text: .
+        - generic [ref=e369]:
+          - generic [ref=e370]: Name
+          - textbox "Name" [ref=e371]
+          - generic [ref=e372]: Email
+          - textbox "Email" [ref=e373]
+          - generic [ref=e374]: Business Name
+          - textbox "Business Name" [ref=e375]
+          - generic [ref=e376]: What does your business do?
+          - textbox "What does your business do?" [ref=e377]
+          - button "Send Message" [ref=e378] [cursor=pointer]
+          - status [ref=e379]
+  - contentinfo [ref=e380]:
+    - generic [ref=e381]:
+      - paragraph [ref=e382]: © 2026 Local Website Partner. All rights reserved.
+      - link "Back to top" [ref=e383] [cursor=pointer]:
+        - /url: "#top"

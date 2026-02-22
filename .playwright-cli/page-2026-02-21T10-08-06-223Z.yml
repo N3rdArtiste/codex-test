@@ -1,0 +1,242 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Local Website Partner" [ref=e5] [cursor=pointer]:
+        - /url: "#top"
+      - navigation "Main navigation" [ref=e6]:
+        - list [ref=e7]:
+          - listitem [ref=e8]:
+            - link "How it Works" [ref=e9] [cursor=pointer]:
+              - /url: "#how-it-works"
+          - listitem [ref=e10]:
+            - link "Pricing" [ref=e11] [cursor=pointer]:
+              - /url: "#pricing"
+          - listitem [ref=e12]:
+            - link "About" [ref=e13] [cursor=pointer]:
+              - /url: "#about"
+          - listitem [ref=e14]:
+            - link "Contact Us" [ref=e15] [cursor=pointer]:
+              - /url: "#contact"
+      - combobox "Select region" [ref=e16] [cursor=pointer]:
+        - option "🇳🇿" [selected]
+        - option "🇨🇦"
+        - option "🇺🇸"
+        - option "🇦🇺"
+        - option "🇪🇺"
+        - option "🇬🇧"
+      - button "Toggle dark mode" [ref=e17] [cursor=pointer]:
+        - img [ref=e18]
+  - main [ref=e24]:
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - paragraph [ref=e29]: Website as a Service for Local Businesses
+        - heading "Get Your Business Online Today for Just $145" [level=1] [ref=e30]:
+          - text: Get Your Business Online Today for Just
+          - generic [ref=e31]: $145
+        - paragraph [ref=e32]:
+          - strong [ref=e33]: $145 one-time setup
+          - text: +
+          - strong [ref=e34]: $5/month ongoing
+          - text: for hosting and domain.
+        - generic [ref=e35]:
+          - link "Get Started for $145" [ref=e36] [cursor=pointer]:
+            - /url: "#contact"
+            - text: Get Started for
+            - generic [ref=e37]: $145
+          - link "View Pricing" [ref=e38] [cursor=pointer]:
+            - /url: "#pricing"
+      - complementary "Service highlights" [ref=e39]:
+        - list [ref=e40]:
+          - listitem [ref=e41]:
+            - generic [ref=e44]:
+              - text: We build, launch, and manage
+              - strong [ref=e45]: fast, professional websites
+              - text: for growing businesses.
+          - listitem [ref=e46]:
+            - generic [ref=e49]: No DIY builders, no confusing software, and zero stress.
+          - listitem [ref=e50]:
+            - generic [ref=e53]:
+              - text: "Ongoing essentials are simple: just"
+              - strong [ref=e54]: $5/month
+              - text: for hosting and domain.
+    - region "What You Get for $145" [ref=e55]:
+      - generic [ref=e56]:
+        - article [ref=e57]:
+          - paragraph [ref=e58]: Included
+          - heading "What You Get for $145" [level=2] [ref=e59]
+          - paragraph [ref=e60]: A complete done-for-you website setup focused on trust, speed, and lead generation for local businesses.
+        - generic [ref=e61]:
+          - article [ref=e62]:
+            - img [ref=e64]
+            - heading "A Complete 4-Page Website" [level=3] [ref=e68]
+            - paragraph [ref=e69]: "We build out the essential pages your business needs to look professional and win trust: an About page to tell your story, a Services page to show what you do, a clear Pricing section, and a Contact page to capture leads."
+          - article [ref=e70]:
+            - img [ref=e72]
+            - heading "Google-Ready Setup (Basic SEO)" [level=3] [ref=e76]
+            - paragraph [ref=e77]: We build your website with the right structure behind the scenes. This helps Google read your site easily, making it more likely that local customers will find you when they search for your services.
+          - article [ref=e78]:
+            - img [ref=e80]
+            - heading "Lightning-Fast Loading Speeds" [level=3] [ref=e83]
+            - paragraph [ref=e84]: We host your website on premium, high-speed servers (the same technology trusted by massive global brands). A fast website keeps potential customers from getting frustrated and clicking away to your competitors.
+          - article [ref=e85]:
+            - img [ref=e87]
+            - heading "Mobile-Perfect Design" [level=3] [ref=e90]
+            - paragraph [ref=e91]: Since most of your customers will be looking you up on their phones, we ensure your new site looks flawless and is easy to navigate on all mobiles and tablets.
+          - article [ref=e92]:
+            - img [ref=e94]
+            - heading "Direct-to-Inbox Contact Form" [level=3] [ref=e98]
+            - paragraph [ref=e99]: We set up a clean, simple contact form that sends customer inquiries straight to your email, making it effortless for you to get new leads.
+    - region "Recent Websites We Have Delivered" [ref=e100]:
+      - generic [ref=e101]:
+        - paragraph [ref=e102]: Our Work
+        - heading "Recent Websites We Have Delivered" [level=2] [ref=e103]
+      - generic "Our work carousel" [ref=e104]:
+        - generic [ref=e105]:
+          - link "Open project one website" [ref=e106] [cursor=pointer]:
+            - /url: https://example.com/work/1
+            - img "Abstract showcase image one" [ref=e107]
+          - link "Open project two website" [ref=e108] [cursor=pointer]:
+            - /url: https://example.com/work/2
+            - img "Abstract showcase image two" [ref=e109]
+          - link "Open project three website" [ref=e110] [cursor=pointer]:
+            - /url: https://example.com/work/3
+            - img "Abstract showcase image three" [ref=e111]
+          - link "Open project four website" [ref=e112] [cursor=pointer]:
+            - /url: https://example.com/work/4
+            - img "Abstract showcase image four" [ref=e113]
+          - link "Open project five website" [ref=e114] [cursor=pointer]:
+            - /url: https://example.com/work/5
+            - img "Abstract showcase image five" [ref=e115]
+          - link "Open project six website" [ref=e116] [cursor=pointer]:
+            - /url: https://example.com/work/6
+            - img "Abstract showcase image six" [ref=e117]
+          - article [ref=e118]
+          - article [ref=e119]
+          - article [ref=e120]
+          - article [ref=e121]
+          - article [ref=e122]
+          - article [ref=e123]
+    - region "A Professional Website is as Easy as 1, 2, 3." [ref=e124]:
+      - generic [ref=e125]:
+        - heading "A Professional Website is as Easy as 1, 2, 3." [level=2] [ref=e126]
+        - paragraph [ref=e127]: Three simple steps. No technical complexity. No long delays.
+        - list [ref=e128]:
+          - listitem [ref=e129]:
+            - generic [ref=e130]: "01"
+            - img [ref=e132]
+            - heading "The Quick Kickoff" [level=3] [ref=e135]
+            - paragraph [ref=e136]: Tell us about your business and share your logo, photos, and key details you want customers to know.
+          - listitem [ref=e137]:
+            - generic [ref=e138]: "02"
+            - img [ref=e140]
+            - heading "We Build It Fast" [level=3] [ref=e142]
+            - paragraph [ref=e143]: We build your custom 1-to-4-page site quickly so it loads fast and looks professional from day one.
+          - listitem [ref=e144]:
+            - generic [ref=e145]: "03"
+            - img [ref=e147]
+            - heading "We Maintain It Forever" [level=3] [ref=e154]
+            - paragraph [ref=e155]: Need changes later? Email us to update hours, services, text, or photos. We handle everything for you.
+    - region "Honest Pricing for Growing Businesses." [ref=e156]:
+      - generic [ref=e157]:
+        - heading "Honest Pricing for Growing Businesses." [level=2] [ref=e158]
+        - generic [ref=e159]:
+          - generic [ref=e160]: Region & Currency
+          - combobox "Select region and currency" [ref=e161]:
+            - option "New Zealand (NZD)" [selected]
+            - option "Canada (CAD)"
+            - option "United States (USD)"
+            - option "Australia (AUD)"
+            - option "Europe (EUR)"
+            - option "United Kingdom (GBP)"
+          - paragraph [ref=e162]: Prices shown in New Zealand (NZD).
+        - paragraph [ref=e163]: No hidden fees and no surprise invoices.
+        - list "Pricing clarity points" [ref=e164]:
+          - listitem [ref=e165]: Single predictable ongoing cost for hosting/domain coverage.
+          - listitem [ref=e166]:
+            - deletion [ref=e167]: Bloated agency retainers
+            - text: replaced with a lean local-first model.
+        - generic [ref=e168]:
+          - article "Required website package" [ref=e169]:
+            - 'heading "The \"Get Me Online\" Setup: $145 NZD (One-Time Fee) + $5/mo Website Essentials" [level=3] [ref=e170]':
+              - text: "The \"Get Me Online\" Setup: $145 NZD"
+              - generic [ref=e171]: (One-Time Fee) + $5/mo Website Essentials
+            - paragraph [ref=e172]:
+              - strong [ref=e173]: Both are required together
+              - text: to launch and keep your website online.
+            - generic "Pricing components" [ref=e174]:
+              - generic [ref=e175]:
+                - img [ref=e176]
+                - generic [ref=e181]:
+                  - strong [ref=e182]: $145 one-time
+                  - paragraph [ref=e183]: Design, build, and launch
+              - generic [ref=e184]:
+                - img [ref=e185]
+                - generic [ref=e188]:
+                  - strong [ref=e189]: $5/mo ongoing
+                  - paragraph [ref=e190]: Hosting + domain essentials
+            - list [ref=e191]:
+              - listitem [ref=e192]: "1 to 4 pages (for example: Homepage, About, Services, Pricing, Contact)"
+              - listitem [ref=e193]: Mobile and tablet optimized
+              - listitem [ref=e194]: Contact form sent straight to your email
+              - listitem [ref=e195]: Fast loading speed and basic SEO setup
+              - listitem [ref=e196]: Web hosting infrastructure, domain renewal management, and SSL uptime coverage
+              - listitem [ref=e197]: $25 flat-fee content updates when needed
+            - link "Get Started" [ref=e198] [cursor=pointer]:
+              - /url: "#contact"
+          - article "Shopify store setup add-on" [ref=e199]:
+            - button "Shopify Store Setup (Optional Add-on) $299 NZD (One-Time Fee)" [ref=e200] [cursor=pointer]:
+              - generic [ref=e201]:
+                - text: Shopify Store Setup
+                - emphasis [ref=e202]: (Optional Add-on)
+              - generic [ref=e203]: $299 NZD (One-Time Fee)
+          - article "Custom app solution" [ref=e204]:
+            - button "Custom Web App or Mobile App Solution Request Quote" [ref=e205] [cursor=pointer]:
+              - generic [ref=e206]:
+                - img [ref=e207]
+                - text: Custom Web App or Mobile App Solution
+              - generic [ref=e209]: Request Quote
+    - region "Your Local Web Partners." [ref=e210]:
+      - generic [ref=e211]:
+        - article [ref=e212]:
+          - heading "Your Local Web Partners." [level=2] [ref=e213]
+          - paragraph [ref=e214]:
+            - text: We started this agency because we saw too many hard-working business owners getting overcharged for websites or stuck in
+            - emphasis [ref=e215]: DIY tools
+            - text: that consumed their free time.
+          - paragraph [ref=e216]:
+            - text: "Our mission is simple: make getting online affordable, fast, and completely hands-off for growing businesses. We focus on"
+            - strong [ref=e217]: honest pricing
+            - text: ", fast communication, and doing the heavy lifting so you can focus on your customers."
+        - complementary [ref=e218]
+    - region "Ready to Get Started?" [ref=e219]:
+      - generic [ref=e220]:
+        - article [ref=e221]:
+          - heading "Ready to Get Started?" [level=2] [ref=e222]
+          - paragraph [ref=e223]:
+            - text: Fill out the short form below, and we will get back to you within
+            - strong [ref=e224]: 24 hours
+            - text: to help you choose the right package, from our
+            - generic [ref=e225]: $145 + $5/month website essentials
+            - text: to
+            - emphasis [ref=e226]: Shopify setup
+            - text: or a
+            - strong [ref=e227]: custom app solution
+            - text: .
+        - generic [ref=e228]:
+          - generic [ref=e229]: Name
+          - textbox "Name" [ref=e230]
+          - generic [ref=e231]: Email
+          - textbox "Email" [ref=e232]
+          - generic [ref=e233]: Business Name
+          - textbox "Business Name" [ref=e234]
+          - generic [ref=e235]: What does your business do?
+          - textbox "What does your business do?" [ref=e236]
+          - button "Send Message" [ref=e237] [cursor=pointer]
+          - status [ref=e238]
+  - contentinfo [ref=e239]:
+    - generic [ref=e240]:
+      - paragraph [ref=e241]: © 2026 Local Website Partner. All rights reserved.
+      - link "Back to top" [ref=e242] [cursor=pointer]:
+        - /url: "#top"

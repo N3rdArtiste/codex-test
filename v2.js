@@ -237,6 +237,44 @@ if (window.lucide) {
   window.lucide.createIcons();
 }
 
+let sharedCheckLottiePromise;
+let sharedCheckLottieBlobUrl = '';
+
+const prepareSharedCheckLottieSource = async () => {
+  const checks = Array.from(document.querySelectorAll('.check-lottie'));
+  if (!checks.length) return;
+
+  const source = checks[0].getAttribute('data-src') || checks[0].getAttribute('src');
+  if (!source) return;
+
+  if (!sharedCheckLottiePromise) {
+    sharedCheckLottiePromise = fetch(source)
+      .then((response) => {
+        if (!response.ok) throw new Error(`Failed to load lottie: ${response.status}`);
+        return response.blob();
+      })
+      .then((blob) => {
+        sharedCheckLottieBlobUrl = URL.createObjectURL(blob);
+        return sharedCheckLottieBlobUrl;
+      })
+      .catch(() => source);
+  }
+
+  const sharedSrc = await sharedCheckLottiePromise;
+  checks.forEach((check) => {
+    if (check.getAttribute('src') !== sharedSrc) {
+      check.setAttribute('src', sharedSrc);
+    }
+  });
+};
+
+window.addEventListener('beforeunload', () => {
+  if (sharedCheckLottieBlobUrl) {
+    URL.revokeObjectURL(sharedCheckLottieBlobUrl);
+    sharedCheckLottieBlobUrl = '';
+  }
+});
+
 const runHeroProofSequence = async () => {
   const heroProof = document.querySelector('.hero-proof');
   const items = document.querySelectorAll('.hero-proof .proof-item');
@@ -249,6 +287,8 @@ const runHeroProofSequence = async () => {
       // continue with fallback behavior
     }
   }
+
+  await prepareSharedCheckLottieSource();
 
   const playLottieOnce = (check) => {
     if (!check) return;

@@ -1,0 +1,220 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Local Website Partner" [ref=e5] [cursor=pointer]:
+        - /url: "#top"
+      - navigation "Main navigation" [ref=e6]:
+        - list [ref=e7]:
+          - listitem [ref=e8]:
+            - link "How it Works" [ref=e9] [cursor=pointer]:
+              - /url: "#how-it-works"
+          - listitem [ref=e10]:
+            - link "Pricing" [ref=e11] [cursor=pointer]:
+              - /url: "#pricing"
+          - listitem [ref=e12]:
+            - link "About" [ref=e13] [cursor=pointer]:
+              - /url: "#about"
+          - listitem [ref=e14]:
+            - link "Contact Us" [ref=e15] [cursor=pointer]:
+              - /url: "#contact"
+      - combobox "Select region" [ref=e16] [cursor=pointer]:
+        - option "🇳🇿"
+        - option "🇨🇦"
+        - option "🇺🇸"
+        - option "🇦🇺"
+        - option "🇪🇺"
+        - option "🇬🇧" [selected]
+      - button "Toggle dark mode" [ref=e17] [cursor=pointer]:
+        - img [ref=e18]
+  - main [ref=e24]:
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - paragraph [ref=e29]: Website as a Service for Local Businesses
+        - heading "Get Your Business Online Today for Just £66." [level=1] [ref=e30]
+        - paragraph [ref=e31]:
+          - strong [ref=e32]: £66 one-time setup
+          - text: +
+          - strong [ref=e33]: £2/month ongoing
+          - text: for hosting and domain.
+        - generic [ref=e34]:
+          - link "Get Started for £66" [ref=e35] [cursor=pointer]:
+            - /url: "#contact"
+            - text: Get Started for
+            - generic [ref=e36]: £66
+          - link "View Pricing" [ref=e37] [cursor=pointer]:
+            - /url: "#pricing"
+      - complementary "Service highlights" [ref=e38]:
+        - list [ref=e39]:
+          - listitem [ref=e40]:
+            - generic [ref=e43]:
+              - text: We build, launch, and manage
+              - strong [ref=e44]: fast, professional websites
+              - text: for growing businesses.
+          - listitem [ref=e45]:
+            - generic [ref=e48]: No DIY builders, no confusing software, and zero stress.
+          - listitem [ref=e49]:
+            - generic [ref=e52]:
+              - text: "Ongoing essentials are simple: just"
+              - strong [ref=e53]: £2/month
+              - text: for hosting and domain.
+    - region "What You Get for £66" [ref=e54]:
+      - generic [ref=e55]:
+        - article [ref=e56]:
+          - paragraph [ref=e57]: Included
+          - heading "What You Get for £66" [level=2] [ref=e58]
+          - paragraph [ref=e59]: A complete done-for-you website setup focused on trust, speed, and lead generation for local businesses.
+        - generic [ref=e60]:
+          - article [ref=e61]:
+            - img [ref=e63]
+            - heading "A Complete 4-Page Website" [level=3] [ref=e67]
+            - paragraph [ref=e68]: "We build out the essential pages your business needs to look professional and win trust: an About page to tell your story, a Services page to show what you do, a clear Pricing section, and a Contact page to capture leads."
+          - article [ref=e69]:
+            - img [ref=e71]
+            - heading "Google-Ready Setup (Basic SEO)" [level=3] [ref=e75]
+            - paragraph [ref=e76]: We build your website with the right structure behind the scenes. This helps Google read your site easily, making it more likely that local customers will find you when they search for your services.
+          - article [ref=e77]:
+            - img [ref=e79]
+            - heading "Lightning-Fast Loading Speeds" [level=3] [ref=e82]
+            - paragraph [ref=e83]: We host your website on premium, high-speed servers (the same technology trusted by massive global brands). A fast website keeps potential customers from getting frustrated and clicking away to your competitors.
+          - article [ref=e84]:
+            - img [ref=e86]
+            - heading "Mobile-Perfect Design" [level=3] [ref=e90]
+            - paragraph [ref=e91]: Since most of your customers will be looking you up on their phones, we ensure your new site looks flawless and is easy to navigate on all mobiles and tablets.
+          - article [ref=e92]:
+            - img [ref=e94]
+            - heading "Direct-to-Inbox Contact Form" [level=3] [ref=e98]
+            - paragraph [ref=e99]: We set up a clean, simple contact form that sends customer inquiries straight to your email, making it effortless for you to get new leads.
+    - region "A Professional Website is as Easy as 1, 2, 3." [ref=e100]:
+      - generic [ref=e101]:
+        - heading "A Professional Website is as Easy as 1, 2, 3." [level=2] [ref=e102]
+        - paragraph [ref=e103]: Three simple steps. No technical complexity. No long delays.
+        - list [ref=e104]:
+          - listitem [ref=e105]:
+            - generic [ref=e106]: "01"
+            - img [ref=e108]
+            - heading "The Quick Kickoff" [level=3] [ref=e111]
+            - paragraph [ref=e112]: Tell us about your business and share your logo, photos, and key details you want customers to know.
+          - listitem [ref=e113]:
+            - generic [ref=e114]: "02"
+            - img [ref=e116]
+            - heading "We Build It Fast" [level=3] [ref=e118]
+            - paragraph [ref=e119]: We build your custom 1-to-4-page site quickly so it loads fast and looks professional from day one.
+          - listitem [ref=e120]:
+            - generic [ref=e121]: "03"
+            - img [ref=e123]
+            - heading "We Maintain It Forever" [level=3] [ref=e130]
+            - paragraph [ref=e131]: Need changes later? Email us to update hours, services, text, or photos. We handle everything for you.
+    - region "Honest Pricing for Growing Businesses." [ref=e132]:
+      - generic [ref=e133]:
+        - heading "Honest Pricing for Growing Businesses." [level=2] [ref=e134]
+        - generic [ref=e135]:
+          - generic [ref=e136]: Region & Currency
+          - combobox "Select region and currency" [ref=e137]:
+            - option "New Zealand (NZD)"
+            - option "Canada (CAD)"
+            - option "United States (USD)"
+            - option "Australia (AUD)"
+            - option "Europe (EUR)"
+            - option "United Kingdom (GBP)" [selected]
+          - paragraph [ref=e138]: Prices shown in United Kingdom (GBP).
+        - paragraph [ref=e139]: No hidden fees and no surprise invoices.
+        - list "Pricing clarity points" [ref=e140]:
+          - listitem [ref=e141]: Single predictable ongoing cost for hosting/domain coverage.
+          - listitem [ref=e142]:
+            - deletion [ref=e143]: Bloated agency retainers
+            - text: replaced with a lean local-first model.
+        - generic [ref=e144]:
+          - article "Required website package" [ref=e145]:
+            - 'heading "The \"Get Me Online\" Setup: £66 GBP (One-Time Fee) + £2/mo Website Essentials" [level=3] [ref=e146]':
+              - text: "The \"Get Me Online\" Setup: £66 GBP"
+              - generic [ref=e147]: (One-Time Fee) + £2/mo Website Essentials
+            - paragraph [ref=e148]:
+              - strong [ref=e149]: Both are required together
+              - text: to launch and keep your website online.
+            - generic "Pricing components" [ref=e150]:
+              - generic [ref=e151]:
+                - img [ref=e152]
+                - generic [ref=e157]:
+                  - strong [ref=e158]: £66 one-time
+                  - paragraph [ref=e159]: Design, build, and launch
+              - generic [ref=e160]:
+                - img [ref=e161]
+                - generic [ref=e164]:
+                  - strong [ref=e165]: £2/mo ongoing
+                  - paragraph [ref=e166]: Hosting + domain essentials
+            - list [ref=e167]:
+              - listitem [ref=e168]: "1 to 4 pages (for example: Homepage, About, Services, Pricing, Contact)"
+              - listitem [ref=e169]: Mobile and tablet optimized
+              - listitem [ref=e170]: Contact form sent straight to your email
+              - listitem [ref=e171]: Fast loading speed and basic SEO setup
+              - listitem [ref=e172]: Web hosting infrastructure, domain renewal management, and SSL uptime coverage
+              - listitem [ref=e173]: $25 flat-fee content updates when needed
+            - link "Get Started" [ref=e174] [cursor=pointer]:
+              - /url: "#contact"
+          - article "Shopify store setup add-on" [ref=e175]:
+            - button "Shopify Store Setup (Optional Add-on) £136 GBP (One-Time Fee)" [ref=e176] [cursor=pointer]:
+              - generic [ref=e177]:
+                - text: Shopify Store Setup
+                - emphasis [ref=e178]: (Optional Add-on)
+              - generic [ref=e179]: £136 GBP (One-Time Fee)
+          - article "Custom app solution" [ref=e180]:
+            - heading "Custom Web App or Mobile App Solution - Request Quote" [level=3] [ref=e181]:
+              - generic [ref=e182]:
+                - img [ref=e183]
+                - text: Custom Web App or Mobile App Solution - Request Quote
+            - paragraph [ref=e185]: For businesses that need advanced functionality beyond a standard website, we design and build tailored app solutions.
+            - list [ref=e186]:
+              - listitem [ref=e187]: Discovery call to map your exact workflow and business requirements
+              - listitem [ref=e188]: Custom UX/UI design for web app and/or iOS/Android experience
+              - listitem [ref=e189]: CMS integrations with Strapi, CraftCMS, and WordPress based on your content and publishing needs
+              - listitem [ref=e190]: CRM integrations with HubSpot and Salesforce for lead capture, sales pipeline, and customer lifecycle workflows
+              - listitem [ref=e191]: Secure backend architecture and scalable deployment planning
+              - listitem [ref=e192]: Feature roadmap with phased milestones and delivery timelines
+              - listitem [ref=e193]: Ongoing support options after launch
+            - link "Request App Consultation" [ref=e194] [cursor=pointer]:
+              - /url: "#contact"
+    - region "Your Local Web Partners." [ref=e195]:
+      - generic [ref=e196]:
+        - article [ref=e197]:
+          - heading "Your Local Web Partners." [level=2] [ref=e198]
+          - paragraph [ref=e199]:
+            - text: We started this agency because we saw too many hard-working business owners getting overcharged for websites or stuck in
+            - emphasis [ref=e200]: DIY tools
+            - text: that consumed their free time.
+          - paragraph [ref=e201]:
+            - text: "Our mission is simple: make getting online affordable, fast, and completely hands-off for growing businesses. We focus on"
+            - strong [ref=e202]: honest pricing
+            - text: ", fast communication, and doing the heavy lifting so you can focus on your customers."
+        - complementary [ref=e203]
+    - region "Ready to Get Started?" [ref=e204]:
+      - generic [ref=e205]:
+        - article [ref=e206]:
+          - heading "Ready to Get Started?" [level=2] [ref=e207]
+          - paragraph [ref=e208]:
+            - text: Fill out the short form below, and we will get back to you within
+            - strong [ref=e209]: 24 hours
+            - text: to help you choose the right package, from our
+            - generic [ref=e210]: £66 + £2/month website essentials
+            - text: to
+            - emphasis [ref=e211]: Shopify setup
+            - text: or a
+            - strong [ref=e212]: custom app solution
+            - text: .
+        - generic [ref=e213]:
+          - generic [ref=e214]: Name
+          - textbox "Name" [ref=e215]
+          - generic [ref=e216]: Email
+          - textbox "Email" [ref=e217]
+          - generic [ref=e218]: Business Name
+          - textbox "Business Name" [ref=e219]
+          - generic [ref=e220]: What does your business do?
+          - textbox "What does your business do?" [ref=e221]
+          - button "Send Message" [ref=e222] [cursor=pointer]
+          - status [ref=e223]
+  - contentinfo [ref=e224]:
+    - generic [ref=e225]:
+      - paragraph [ref=e226]: © 2026 Local Website Partner. All rights reserved.
+      - link "Back to top" [ref=e227] [cursor=pointer]:
+        - /url: "#top"
