@@ -9,8 +9,8 @@ const year = document.getElementById('year-v2');
 const regionSelects = Array.from(document.querySelectorAll('[data-region-select]'));
 const regionNote = document.getElementById('region-note');
 
-const THEME_KEY = 'invicta-theme-v2';
-const REGION_KEY = 'invicta-region-v2';
+const THEME_KEY = 'websiteplus-theme-v2';
+const REGION_KEY = 'websiteplus-region-v2';
 
 const REGION_CONFIG = {
   NZ: { label: 'New Zealand', currency: 'NZD', locale: 'en-NZ', monthly: 20, shopify: 299 },
@@ -35,6 +35,15 @@ const applyTheme = (theme) => {
   localStorage.setItem(THEME_KEY, theme);
 };
 
+const updateThemeToggleIcon = (theme) => {
+  if (!themeToggle) return;
+  const iconName = theme === 'dark' ? 'sun' : 'sun-moon';
+  themeToggle.innerHTML = `<i data-lucide="${iconName}"></i>`;
+  themeToggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+  themeToggle.setAttribute('title', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+  if (window.lucide) window.lucide.createIcons();
+};
+
 const getInitialTheme = () => {
   const saved = localStorage.getItem(THEME_KEY);
   if (saved === 'dark' || saved === 'light') return saved;
@@ -42,6 +51,7 @@ const getInitialTheme = () => {
 };
 
 applyTheme(getInitialTheme());
+updateThemeToggleIcon(root.getAttribute('data-theme') || 'dark');
 
 year.textContent = new Date().getFullYear();
 
@@ -107,7 +117,9 @@ if (regionSelects.length) {
 if (themeToggle) {
   themeToggle.addEventListener('click', () => {
     const current = root.getAttribute('data-theme') || 'dark';
-    applyTheme(current === 'dark' ? 'light' : 'dark');
+    const next = current === 'dark' ? 'light' : 'dark';
+    applyTheme(next);
+    updateThemeToggleIcon(next);
   });
 }
 
@@ -127,11 +139,31 @@ if (navToggle && mainNav) {
   });
 
   window.addEventListener('resize', () => {
-    if (window.innerWidth > 840) closeNav();
+    if (window.innerWidth > 910) closeNav();
   });
 }
 
 if (form && message) {
+  const launchConfetti = () => {
+    if (reduceMotion) return;
+
+    if (typeof window.confetti === 'function') {
+      // tsParticles confetti preset (smoother and slower than custom CSS burst)
+      window.confetti('tsparticles', {
+        particleCount: 180,
+        spread: 110,
+        startVelocity: 22,
+        gravity: 0.9,
+        decay: 0.94,
+        scalar: 1,
+        ticks: 260,
+        zIndex: 9999,
+        disableForReducedMotion: true
+      });
+      return;
+    }
+  };
+
   form.addEventListener('submit', (event) => {
     event.preventDefault();
 
@@ -140,22 +172,29 @@ if (form && message) {
       return;
     }
 
-    const data = new FormData(form);
-    const name = data.get('name');
-    const email = data.get('email');
-    const business = data.get('business');
-    const details = data.get('details');
-
-    const subject = encodeURIComponent(`New website enquiry from ${business}`);
-    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nBusiness: ${business}\n\nWhat they do:\n${details}`);
-
-    message.textContent = 'Thanks. Your email app is opening so you can send your enquiry.';
-    window.location.href = `mailto:hello@yourdomain.co.nz?subject=${subject}&body=${body}`;
+    launchConfetti();
+    message.textContent = 'Thanks, we will contact you shortly.';
+    form.reset();
   });
 }
 
 const revealElements = document.querySelectorAll('.reveal');
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const stepsList = document.querySelector('.steps');
+const stepRevealCards = stepsList ? Array.from(stepsList.querySelectorAll('li.reveal')) : [];
+let stepsFlowShown = false;
+
+const showStepsFlowWhenReady = () => {
+  if (!stepsList || !stepRevealCards.length || stepsFlowShown) return;
+  const allVisible = stepRevealCards.every((card) => card.classList.contains('is-visible'));
+  if (!allVisible) return;
+
+  const revealDelay = reduceMotion ? 60 : 620;
+  stepsFlowShown = true;
+  window.setTimeout(() => {
+    stepsList.classList.add('is-flow-visible');
+  }, revealDelay);
+};
 
 if (!reduceMotion && 'IntersectionObserver' in window) {
   const observer = new IntersectionObserver(
@@ -163,6 +202,9 @@ if (!reduceMotion && 'IntersectionObserver' in window) {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('is-visible');
+          if (stepRevealCards.includes(entry.target)) {
+            showStepsFlowWhenReady();
+          }
           obs.unobserve(entry.target);
         }
       });
@@ -173,6 +215,7 @@ if (!reduceMotion && 'IntersectionObserver' in window) {
   revealElements.forEach((el) => observer.observe(el));
 } else {
   revealElements.forEach((el) => el.classList.add('is-visible'));
+  showStepsFlowWhenReady();
 }
 
 if (window.lucide) {
@@ -278,11 +321,16 @@ const runHeroProofSequence = async () => {
   const startDelayMs = 300;
   const rowGapMs = 820;
   const textDelayMs = 320;
+  let safetyKickoffId = null;
 
   let sequenceStarted = false;
   const startSequence = () => {
     if (sequenceStarted) return;
     sequenceStarted = true;
+    if (safetyKickoffId) {
+      window.clearTimeout(safetyKickoffId);
+      safetyKickoffId = null;
+    }
 
     items.forEach((item, index) => {
       const check = item.querySelector('.check-lottie');
@@ -314,12 +362,79 @@ const runHeroProofSequence = async () => {
       { threshold: 0.35 }
     );
     heroProofObserver.observe(heroProof);
+    // Fallback: start anyway in case observer timing misses on fast/restore loads.
+    safetyKickoffId = window.setTimeout(startSequence, 1400);
   } else {
     startSequence();
   }
 };
 
 runHeroProofSequence();
+
+const initCoreVitalsAnimation = () => {
+  const widgets = document.querySelectorAll('[data-core-vitals]');
+  if (!widgets.length) return;
+
+  const animateRing = (ring, target, delay = 0) => {
+    const valueEl = ring.querySelector('.vital-value');
+    const duration = 1200;
+    const startAt = performance.now() + delay;
+
+    const step = (now) => {
+      if (now < startAt) {
+        requestAnimationFrame(step);
+        return;
+      }
+
+      const elapsed = now - startAt;
+      const progress = Math.min(1, elapsed / duration);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      const current = Math.round(target * eased);
+
+      ring.style.setProperty('--score', String(current));
+      if (valueEl) valueEl.textContent = String(current);
+
+      if (progress < 1) requestAnimationFrame(step);
+    };
+
+    requestAnimationFrame(step);
+  };
+
+  const runWidget = (widget) => {
+    if (widget.dataset.animated === 'true') return;
+    widget.dataset.animated = 'true';
+
+    const rings = Array.from(widget.querySelectorAll('.vital-ring'));
+    rings.forEach((ring, index) => {
+      const target = Number(ring.getAttribute('data-target') || '100');
+      if (reduceMotion) {
+        ring.style.setProperty('--score', String(target));
+        const valueEl = ring.querySelector('.vital-value');
+        if (valueEl) valueEl.textContent = String(target);
+        return;
+      }
+      animateRing(ring, target, index * 120);
+    });
+  };
+
+  if ('IntersectionObserver' in window && !reduceMotion) {
+    const vitalsObserver = new IntersectionObserver(
+      (entries, obs) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          runWidget(entry.target);
+          obs.unobserve(entry.target);
+        });
+      },
+      { threshold: 0.45 }
+    );
+    widgets.forEach((widget) => vitalsObserver.observe(widget));
+  } else {
+    widgets.forEach(runWidget);
+  }
+};
+
+initCoreVitalsAnimation();
 
 const initOurWorkSwipe = () => {
   const container = document.querySelector('.our-work-menu.menu');
@@ -422,7 +537,7 @@ const enableCardTilt = () => {
   if (reduceMotion) return;
 
   const cards = document.querySelectorAll(
-    '.hero-proof, .metric, .problem-copy, .compare-card, .setup-box, .plan-card, .about-grid > article, .about-visual, .contact-wrap > article, .contact-form, .steps li'
+    '.hero-proof, .metric, .problem-copy, .compare-card, .setup-box, .plan-card, .about-grid > article, .about-visual, .contact-wrap > article, .contact-form, .steps li, .creative-card'
   );
 
   cards.forEach((card) => {
@@ -435,10 +550,12 @@ const enableCardTilt = () => {
       const rotateY = (px - 0.5) * 8;
       const rotateX = (0.5 - py) * 8;
 
+      card.classList.add('is-tilting');
       card.style.transform = `perspective(900px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-3px)`;
     });
 
     card.addEventListener('pointerleave', () => {
+      card.classList.remove('is-tilting');
       card.style.transform = '';
     });
   });
@@ -450,7 +567,7 @@ const initNavIndicator = () => {
   const navList = document.querySelector('.nav-list');
   const brandLink = document.querySelector('.brand[href="#top"]');
   const ourWorkSection = document.getElementById('our-work');
-  const get149Section = document.getElementById('get-149');
+  const whySection = document.getElementById('why-choose-us');
   if (!navList) return;
 
   const navLinks = Array.from(navList.querySelectorAll('a[href^="#"]'));
@@ -518,8 +635,8 @@ const initNavIndicator = () => {
     const activeLink = (current && linkById.get(current.id)) || navLinks[0];
     const headerOffset = siteHeader?.offsetHeight || 90;
     const scrollTop = window.scrollY + headerOffset;
-    const preOurWorkTrigger = get149Section
-      ? get149Section.offsetTop + get149Section.offsetHeight - 140
+    const preOurWorkTrigger = whySection
+      ? whySection.offsetTop + whySection.offsetHeight - 140
       : (ourWorkSection?.offsetTop || 0);
 
     if (ourWorkSection && scrollTop >= preOurWorkTrigger && scrollTop < ourWorkSection.offsetTop) {
@@ -570,8 +687,8 @@ const initNavIndicator = () => {
     const activeLink = (current && linkById.get(current.id)) || navLinks[0];
     const headerOffset = siteHeader?.offsetHeight || 90;
     const scrollTop = window.scrollY + headerOffset;
-    const preOurWorkTrigger = get149Section
-      ? get149Section.offsetTop + get149Section.offsetHeight - 140
+    const preOurWorkTrigger = whySection
+      ? whySection.offsetTop + whySection.offsetHeight - 140
       : (ourWorkSection?.offsetTop || 0);
 
     if (ourWorkSection && scrollTop >= preOurWorkTrigger && scrollTop < ourWorkSection.offsetTop) {
@@ -595,7 +712,7 @@ const initHeaderAutoHide = () => {
 
   let lastY = window.scrollY;
   let ticking = false;
-  const mobileQuery = window.matchMedia('(max-width: 840px)');
+  const mobileQuery = window.matchMedia('(max-width: 910px)');
   const topLock = 36;
   const hideStart = 140;
   const delta = 4;

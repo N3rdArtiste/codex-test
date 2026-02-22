@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Website as a Service for Growing Businesses | Version 2</title>
+  <title>WebsitePlus | Website as a Service for Growing Businesses</title>
   <meta name="description"
-    content="Modern, minimal website for local businesses with one simple price: $20/month, including hosting, domain, and ongoing updates." />
+    content="WebsitePlus builds and manages modern websites for growing businesses with one simple price: $20/month, including hosting, domain, and ongoing updates." />
   <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
   <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
   <meta name="theme-color" content="#0b0f1a" />
@@ -14,7 +14,8 @@
       {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "Local Website Partner",
+        "name": "WebsitePlus",
+        "url": "https://websiteplus.co.nz/",
         "description": "Website services for growing businesses, including monthly website care, Shopify setup, and custom app solutions.",
         "areaServed": "NZ",
         "hasOfferCatalog": {
@@ -68,6 +69,7 @@
   <script type="module" src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.11/dist/dotlottie-wc.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3/tsparticles.confetti.bundle.min.js"></script>
   <script defer src="v2.js"></script>
 </head>
 
@@ -84,10 +86,12 @@
 
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="#top">Local Website Partner</a>
+      <a class="brand" href="#top" aria-label="WebsitePlus home">
+        <span class="brand-word">Website</span><span class="brand-plus">Plus</span>
+      </a>
       <nav class="main-nav" id="main-nav" aria-label="Main navigation">
         <ul class="nav-list">
-          <li><a href="#our-work">Our Work</a></li>
+          <li><a href="#our-portfolio">Our Portfolio</a></li>
           <li><a href="#how-it-works">How it Works</a></li>
           <li><a href="#pricing">Pricing</a></li>
           <li><a href="#about">About</a></li>
@@ -98,13 +102,8 @@
         aria-label="Toggle navigation menu">
         <i data-lucide="menu"></i>
       </button>
-      <select
-        id="region-flag-select"
-        class="region-flag-select"
-        data-region-select
-        aria-label="Select region"
-        title="Select region"
-      ></select>
+      <select id="region-flag-select" class="region-flag-select" data-region-select aria-label="Select region"
+        title="Select region"></select>
       <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode"
         title="Toggle dark mode">
         <i data-lucide="sun-moon"></i>
@@ -118,10 +117,13 @@
         <div class="hero-layout">
           <div>
             <p class="eyebrow">Website as a Service for Local Businesses</p>
-            <h1>Get Your Business Online Today for Just <span class="hero-price-emphasis"><span data-price="monthly-inline">$20</span>/month</span></h1>
-            <p class="hero-price-note"><strong><span data-price="monthly-inline">$20</span>/month</strong> covers your website build, hosting, domain, and ongoing basic updates.</p>
+            <h1>Get Your Business Online Today for Just <span class="hero-price-emphasis"><span
+                  data-price="monthly-inline">$20</span>/month</span></h1>
+            <p class="hero-price-note"><strong><span data-price="monthly-inline">$20</span>/month</strong> covers your
+              website build, hosting, domain, and ongoing basic updates.</p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#contact">Get Started for &nbsp;<span data-price="monthly-inline">$20</span>/month</a>
+              <a class="btn btn-primary" href="#contact">Get Started for &nbsp;<span
+                  data-price="monthly-inline">$20</span>/month</a>
               <a class="btn btn-secondary" href="#pricing">View Pricing</a>
             </div>
           </div>
@@ -129,23 +131,29 @@
           <aside class="hero-proof reveal" aria-label="Service highlights">
             <ul class="hero-proof-list">
               <li class="proof-item">
-                <dotlottie-wc class="check-lottie"
-                  src="https://lottie.host/0b2ea67a-909c-47cc-b58b-1930af04c9cb/Au5bigGBTJ.lottie"
-                  style="width: 28px; height: 28px"></dotlottie-wc>
+                <span class="check-slot" aria-hidden="true">
+                  <dotlottie-wc class="check-lottie"
+                    src="https://lottie.host/0b2ea67a-909c-47cc-b58b-1930af04c9cb/Au5bigGBTJ.lottie"
+                    style="width: 28px; height: 28px"></dotlottie-wc>
+                </span>
                 <span>We build, launch, and manage <strong>fast, professional websites</strong> for growing
                   businesses.</span>
               </li>
               <li class="proof-item">
-                <dotlottie-wc class="check-lottie"
-                  src="https://lottie.host/0b2ea67a-909c-47cc-b58b-1930af04c9cb/Au5bigGBTJ.lottie"
-                  style="width: 28px; height: 28px"></dotlottie-wc>
+                <span class="check-slot" aria-hidden="true">
+                  <dotlottie-wc class="check-lottie"
+                    src="https://lottie.host/0b2ea67a-909c-47cc-b58b-1930af04c9cb/Au5bigGBTJ.lottie"
+                    style="width: 28px; height: 28px"></dotlottie-wc>
+                </span>
                 <span>No DIY builders, no confusing software, and <u>zero stress</u>.</span>
               </li>
-              <li class="proof-item">
-                <dotlottie-wc class="check-lottie"
-                  src="https://lottie.host/0b2ea67a-909c-47cc-b58b-1930af04c9cb/Au5bigGBTJ.lottie"
-                  style="width: 28px; height: 28px"></dotlottie-wc>
-                <span>Simple pricing: just <strong><span data-price="monthly-inline">$20</span>/month</strong> for build, hosting, domain, and basic content updates.</span>
+              <li class="proof-item proof-item-kiwi">
+                <span class="check-slot" aria-hidden="true">
+                  <dotlottie-wc class="check-lottie"
+                    src="https://lottie.host/0b2ea67a-909c-47cc-b58b-1930af04c9cb/Au5bigGBTJ.lottie"
+                    style="width: 28px; height: 28px"></dotlottie-wc>
+                </span>
+                <span>Kiwi-owned. Kiwi-managed.</span>
               </li>
             </ul>
           </aside>
@@ -154,79 +162,125 @@
       </div>
     </section>
 
-    <section
-      id="get-149"
-      class="section get149-section reveal"
-      aria-labelledby="get149-title"
-    >
-      <div class="container get149-shell">
-        <article class="get149-lead reveal">
-          <p class="eyebrow">Included</p>
-          <h2 id="get149-title">What You Get for <span data-price="monthly-inline">$20</span>/month</h2>
+    <section id="why-choose-us" class="section why-section reveal" aria-labelledby="why-title">
+      <div class="container why-shell">
+        <article class="why-lead reveal">
+          <p class="eyebrow">Why Choose Us</p>
+          <h2 id="why-title">Everything You Need. Nothing You Don’t.</h2>
           <p class="lead-copy">
-            A complete done-for-you website service focused on trust, speed, and lead generation for local businesses.
+            A premium, done-for-you website experience built to help growing businesses look credible, rank better,
+            and capture more leads.
           </p>
         </article>
-        <div class="get149-grid">
-          <article class="get-item get149-reveal reveal">
-            <span class="get-icon" aria-hidden="true"><i data-lucide="layout-template"></i></span>
-            <h3>A Complete 4-Page Website</h3>
+        <div class="why-grid">
+          <article class="get-item why-reveal reveal creative-card">
+            <span class="get-icon" aria-hidden="true"><i data-lucide="sparkles"></i></span>
+            <h3>Creative, Custom-Looking Design</h3>
             <p>
-              We build out the essential pages your business needs to look professional and win trust: an About page to
-              tell your
-              story, a Services page to show what you do, a clear Pricing section, and a Contact page to capture leads.
+              We don't use boring, cookie-cutter layouts. Your site will feature modern UI and engaging animations
+              that make your business look like an industry leader, building immediate trust with your visitors.
             </p>
           </article>
-          <article class="get-item get149-reveal reveal">
-            <span class="get-icon" aria-hidden="true"><i data-lucide="search-check"></i></span>
-            <h3>Google-Ready Setup (Basic SEO)</h3>
+          <article class="get-item why-reveal reveal">
+            <span class="get-icon" aria-hidden="true"><i data-lucide="monitor-smartphone"></i></span>
+            <h3>Flawless on Every Device</h3>
+            <div class="responsive-demo" aria-hidden="true">
+              <div class="responsive-frame">
+                <div class="responsive-topbar"></div>
+                <div class="responsive-body">
+                  <span class="r-block r-hero"></span>
+                  <span class="r-block r-image"></span>
+                  <span class="r-block r-text"></span>
+                </div>
+              </div>
+              <div class="responsive-labels">
+                <span>Desktop</span>
+                <span>Tablet</span>
+                <span>Mobile</span>
+              </div>
+            </div>
             <p>
-              We build your website with the right structure behind the scenes. This helps Google read your site easily,
-              making it
-              more likely that local customers will find you when they search for your services.
+              Whether your customers are browsing on a massive PC monitor, an iPad, or an old smartphone, your website
+              will automatically adapt to look perfect and function seamlessly.
             </p>
           </article>
-          <article class="get-item get149-reveal reveal">
+
+          <article class="get-item why-reveal reveal">
             <span class="get-icon" aria-hidden="true"><i data-lucide="gauge"></i></span>
-            <h3>Lightning-Fast Loading Speeds</h3>
+            <h3>Perfect 100 Google Performance Scores</h3>
+            <div class="core-vitals" data-core-vitals aria-label="Google Core Web Vitals style scores">
+              <div class="vital-metric">
+                <div class="vital-ring" data-target="100"><span class="vital-value">0</span></div>
+                <p>Performance</p>
+              </div>
+              <div class="vital-metric">
+                <div class="vital-ring" data-target="100"><span class="vital-value">0</span></div>
+                <p>Accessibility</p>
+              </div>
+              <div class="vital-metric">
+                <div class="vital-ring" data-target="100"><span class="vital-value">0</span></div>
+                <p>Best Practices</p>
+              </div>
+              <div class="vital-metric">
+                <div class="vital-ring" data-target="100"><span class="vital-value">0</span></div>
+                <p>SEO</p>
+              </div>
+            </div>
             <p>
-              We host your website on premium, high-speed servers (the same technology trusted by massive global
-              brands). A fast
-              website keeps potential customers from getting frustrated and clicking away to your competitors.
+              We build sites that achieve perfect scores on Google's Core Web Vitals. These metrics measure loading
+              performance, visual stability, and interactivity. Google uses them as ranking factors, so perfect scores
+              help you outrank competitors while reducing user drop-off from slow or unstable pages.
             </p>
           </article>
-          <article class="get-item get149-reveal reveal">
-            <span class="get-icon" aria-hidden="true"><i data-lucide="tablet-smartphone"></i></span>
-            <h3>Mobile-Perfect Design</h3>
+          <article class="get-item why-reveal reveal hosting-card">
+
+            <span class="get-icon" aria-hidden="true"><i data-lucide="server"></i></span>
+            <h3>Lightning-Fast Premium Hosting</h3>
             <p>
-              Since most of your customers will be looking you up on their phones, we ensure your new site looks
-              flawless and is easy
-              to navigate on all mobiles and tablets.
+              We host your website on the world's fastest servers. No infinite loading wheels or broken pages, just
+              instant access to your business, 24/7.
             </p>
           </article>
-          <article class="get-item get149-reveal reveal">
-            <span class="get-icon" aria-hidden="true"><i data-lucide="mail-check"></i></span>
-            <h3>Direct-to-Inbox Contact Form</h3>
+          <article class="get-item why-reveal reveal">
+            <span class="get-icon" aria-hidden="true"><i data-lucide="search-check"></i></span>
+            <h3>Local SEO Included</h3>
             <p>
-              We set up a clean, simple contact form that sends customer inquiries straight to your email, making it
-              effortless for
-              you to get new leads.
+              We bake search engine optimization directly into the code. Your site is built from day one to be easily
+              read and favored by Google, helping local customers find you faster.
+            </p>
+          </article>
+          <article class="get-item why-reveal reveal">
+            <span class="get-icon" aria-hidden="true"><i data-lucide="megaphone"></i></span>
+            <h3>Ready for Ads &amp; Leads</h3>
+            <div class="lead-demo" aria-hidden="true">
+              <div class="lead-demo-form">
+                <div class="lead-demo-field"></div>
+                <div class="lead-demo-field short"></div>
+                <button class="lead-demo-submit" type="button">Submit</button>
+              </div>
+              <span class="lead-demo-cursor"></span>
+            </div>
+            <p>
+              Your website isn't just a digital brochure; it's a lead-generation machine. It comes fully optimized and
+              ready to act as the perfect landing page for your Facebook, Instagram, or Google ad campaigns, with a
+              built-in contact form to turn visitors into direct enquiries.
             </p>
           </article>
         </div>
       </div>
     </section>
-    <section class="section our-work-section reveal" id="our-work" aria-labelledby="our-work-title">
+    <section class="section our-work-section reveal" id="our-portfolio" aria-labelledby="our-work-title">
       <div class="container">
-        <p class="eyebrow">Our Work</p>
+        <p class="eyebrow">Our Portfolio</p>
         <h2 id="our-work-title">Recent Websites We Have Delivered</h2>
       </div>
 
-      <div class="our-work-menu menu" aria-label="Our work carousel">
+      <div class="our-work-menu menu" aria-label="Our portfolio carousel">
         <div class="menu--wrapper">
           <div class="menu--item">
             <a href="https://example.com/work/1" target="_blank" rel="noopener noreferrer">
-              <figure><img src="images/pexels-anniroenkae-2832439.jpg" alt="Project one preview" loading="lazy" /></figure>
+              <figure><img src="images/pexels-anniroenkae-2832439.jpg" alt="Project one preview" loading="lazy" />
+              </figure>
             </a>
           </div>
           <div class="menu--item">
@@ -241,17 +295,20 @@
           </div>
           <div class="menu--item">
             <a href="https://example.com/work/4" target="_blank" rel="noopener noreferrer">
-              <figure><img src="images/pexels-magda-ehlers-pexels-1279813.jpg" alt="Project four preview" loading="lazy" /></figure>
+              <figure><img src="images/pexels-magda-ehlers-pexels-1279813.jpg" alt="Project four preview"
+                  loading="lazy" /></figure>
             </a>
           </div>
           <div class="menu--item">
             <a href="https://example.com/work/5" target="_blank" rel="noopener noreferrer">
-              <figure><img src="images/pexels-nullxtract-1173987.jpg" alt="Project five preview" loading="lazy" /></figure>
+              <figure><img src="images/pexels-nullxtract-1173987.jpg" alt="Project five preview" loading="lazy" />
+              </figure>
             </a>
           </div>
           <div class="menu--item">
             <a href="https://example.com/work/6" target="_blank" rel="noopener noreferrer">
-              <figure><img src="images/pexels-tuesday-temptation-190692-3780104.jpg" alt="Project six preview" loading="lazy" /></figure>
+              <figure><img src="images/pexels-tuesday-temptation-190692-3780104.jpg" alt="Project six preview"
+                  loading="lazy" /></figure>
             </a>
           </div>
         </div>
@@ -260,8 +317,8 @@
 
     <section class="section reveal" id="how-it-works" aria-labelledby="how-title">
       <div class="container how-shell">
-        <h2 id="how-title">A Professional Website is as Easy as 1, 2, 3.</h2>
-        <p class="steps-intro">Three simple steps. No technical complexity. No long delays.</p>
+        <h2 id="how-title">Your New Website, Done in 3 Simple Steps.</h2>
+        <p class="steps-intro">No technical complexity. No long delays.</p>
         <ol class="steps">
           <li class="reveal step-card">
             <span class="step-num">01</span>
@@ -291,7 +348,8 @@
         <h2 id="pricing-title">Honest Pricing for Growing Businesses.</h2>
         <div class="region-switch">
           <label for="region-select">Region & Currency</label>
-          <select id="region-select" class="region-select" data-region-select aria-label="Select region and currency"></select>
+          <select id="region-select" class="region-select" data-region-select
+            aria-label="Select region and currency"></select>
           <p class="region-note" id="region-note">Prices shown in your local currency.</p>
         </div>
         <p class="section-intro">
@@ -299,12 +357,13 @@
         </p>
         <ul class="section-points" aria-label="Pricing clarity points">
           <li><u>Single predictable ongoing cost</u> for hosting/domain coverage.</li>
-          <li><del>Bloated agency retainers</del> replaced with a lean local-first model.</li>
+          <li><del>Bloated high-cost retainers</del> replaced with a lean global-first model.</li>
         </ul>
         <div class="pricing-offers">
           <article class="setup-box pricing-combined reveal" aria-label="Required website package">
             <h3>Website Essentials Plan: <span data-price="monthly-full">NZ$20/mo</span></h3>
-            <p class="price-subtitle"><strong>One simple monthly fee.</strong> No one-off setup charge and no separate content update fee.</p>
+            <p class="price-subtitle"><strong>One simple monthly fee.</strong> No one-off setup charge and no separate
+              content update fee.</p>
 
             <div class="price-pill-row" aria-label="Pricing components">
               <div class="price-pill">
@@ -323,7 +382,7 @@
               </div>
             </div>
 
-            <ul class="check-list">
+            <ul class="check-list plan-check-list">
               <li>1 to 4 pages (for example: Homepage, About, Services, Pricing, Contact)</li>
               <li>Mobile and tablet optimized</li>
               <li>Contact form sent straight to your email</li>
@@ -345,7 +404,7 @@
               <span class="shopify-price"><span data-price="shopify-full">NZ$299 NZD</span> (One-Time Fee)</span>
             </button>
             <div id="shopify-content" class="shopify-body" x-cloak x-show="open" x-collapse.duration.420ms>
-                            <div class="divider"></div>
+              <div class="divider"></div>
               <p class="price-subtitle">Perfect if you need a ready-to-sell online store configured professionally from
                 the start.</p>
               <ul class="check-list">
@@ -359,9 +418,10 @@
             </div>
           </article>
 
-          <article class="setup-box app-offer app-expand reveal" aria-label="Custom app solution" x-data="{ open: false }">
-            <button class="shopify-summary app-summary" type="button" @click="open = !open" x-bind:aria-expanded="open.toString()"
-              aria-controls="app-content">
+          <article class="setup-box app-offer app-expand reveal" aria-label="Custom app solution"
+            x-data="{ open: false }">
+            <button class="shopify-summary app-summary" type="button" @click="open = !open"
+              x-bind:aria-expanded="open.toString()" aria-controls="app-content">
               <span class="app-title">
                 <i data-lucide="app-window" aria-hidden="true"></i>
                 Custom Web App or Mobile App Solution
@@ -377,8 +437,10 @@
               <ul class="check-list">
                 <li>Discovery call to map your exact workflow and business requirements</li>
                 <li>Custom UX/UI design for web app and/or iOS/Android experience</li>
-                <li>CMS integrations with Strapi, CraftCMS, and WordPress based on your content and publishing needs</li>
-                <li>CRM integrations with HubSpot and Salesforce for lead capture, sales pipeline, and customer lifecycle workflows</li>
+                <li>CMS integrations with Strapi, CraftCMS, and WordPress based on your content and publishing needs
+                </li>
+                <li>CRM integrations with HubSpot and Salesforce for lead capture, sales pipeline, and customer
+                  lifecycle workflows</li>
                 <li>Secure backend architecture and scalable deployment planning</li>
                 <li>Feature roadmap with phased milestones and delivery timelines</li>
                 <li>Ongoing support options after launch</li>
@@ -393,9 +455,9 @@
     <section class="section reveal" id="about" aria-labelledby="about-title">
       <div class="container about-grid">
         <article class="reveal">
-          <h2 id="about-title">Your Local Web Partners.</h2>
+          <h2 id="about-title">Your Website Growth Partners.</h2>
           <p>
-            We started this agency because we saw too many hard-working business owners getting overcharged for websites
+            We built WebsitePlus because we saw too many hard-working business owners getting overcharged for websites
             or stuck in
             <em>DIY tools</em> that consumed their free time.
           </p>
@@ -408,14 +470,12 @@
         </article>
         <aside class="reveal about-visual">
           <figure class="developer-card">
-            <img
-              class="developer-photo"
-              src="images/Gemini_Generated_Image_7d3db47d3db47d3d.png"
-              alt="Photo of your local web developer"
-              loading="lazy" />
+            <img class="developer-photo" src="images/developer.jpg"
+              alt="WebsitePlus web development team" loading="lazy" />
             <figcaption>
-              <strong>Meet Your Developer</strong>
-              <p>A local partner focused on clear communication, practical results, and long-term support.</p>
+              <strong>Experienced Development Team</strong>
+              <p>WebsitePlus is based in Auckland, New Zealand, and led by highly experienced developers delivering
+                reliable builds, premium performance, and long-term technical support.</p>
             </figcaption>
           </figure>
         </aside>
@@ -429,7 +489,8 @@
           <p>
             Fill out the short form below, and we will get back to you within <strong>24 hours</strong> to help you
             choose the right
-            package, from our <u><span data-price="monthly-inline">$20</span>/month website essentials</u> to <em>Shopify setup</em> or a <strong>custom
+            package, from our <u><span data-price="monthly-inline">$20</span>/month website essentials</u> to
+            <em>Shopify setup</em> or a <strong>custom
               app solution</strong>.
           </p>
         </article>
@@ -455,8 +516,11 @@
 
   <footer class="site-footer">
     <div class="container footer-wrap">
-      <p>&copy; <span id="year-v2"></span> Local Website Partner. All rights reserved.</p>
-      <a href="#top">Back to top</a>
+      <p>&copy; <span id="year-v2"></span> WebsitePlus. All rights reserved. NZBN: 9429050980383. Based in Auckland, New
+        Zealand ❤️.</p>
+      <a href="#top" class="to-top-btn" aria-label="Back to top">
+        <i data-lucide="arrow-up"></i>
+      </a>
     </div>
   </footer>
 </body>

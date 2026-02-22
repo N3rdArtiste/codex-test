@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en-NZ" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>404 | WebsitePlus</title>
+  <meta name="description" content="Page not found." />
+  <meta name="robots" content="noindex, follow" />
+  <meta name="theme-color" content="#0b0f1a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #070b14;
+      --bg-soft: #0d1421;
+      --text: #e9eefb;
+      --muted: #afbad6;
+      --brand: #8fa9ff;
+      --accent: #38dfc5;
+      --accent-strong: #2fc2ab;
+      --card: rgba(12, 19, 34, 0.74);
+      --card-border: rgba(141, 165, 255, 0.24);
+      --shadow: 0 16px 46px rgba(2, 6, 17, 0.52);
+      --radius: 22px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      font-family: "Manrope", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    .bg-layer {
+      position: fixed;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(56px);
+      opacity: 0.52;
+      animation: drift 15s ease-in-out infinite alternate;
+    }
+
+    .blob-a {
+      width: 440px;
+      height: 440px;
+      left: -120px;
+      top: -120px;
+      background: #3c58f2;
+    }
+
+    .blob-b {
+      width: 360px;
+      height: 360px;
+      right: -80px;
+      top: 22%;
+      background: #1fc9bb;
+      animation-duration: 19s;
+    }
+
+    .blob-c {
+      width: 320px;
+      height: 320px;
+      left: 40%;
+      bottom: -120px;
+      background: #6f3af3;
+      animation-duration: 22s;
+    }
+
+    .grid-fade {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(136, 154, 216, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(136, 154, 216, 0.08) 1px, transparent 1px);
+      background-size: 44px 44px;
+      mask-image: radial-gradient(circle at center, black 24%, transparent 78%);
+    }
+
+    @keyframes drift {
+      from { transform: translate3d(0, 0, 0); }
+      to { transform: translate3d(0, -28px, 0) scale(1.08); }
+    }
+
+    .wrap {
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    .panel {
+      width: min(760px, 100%);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      background: var(--card);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(12px) saturate(145%);
+      -webkit-backdrop-filter: blur(12px) saturate(145%);
+      padding: clamp(24px, 4vw, 42px);
+      text-align: center;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 0.04em;
+      text-decoration: none;
+      font-family: "Outfit", sans-serif;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      font-size: clamp(1.4rem, 3.5vw, 2rem);
+      color: var(--text);
+      margin-bottom: 10px;
+    }
+
+    .brand-plus {
+      font-size: 0.72em;
+      vertical-align: super;
+      position: relative;
+      top: -0.35em;
+      background-image: repeating-linear-gradient(
+        110deg,
+        color-mix(in srgb, var(--brand) 88%, #ffffff 12%) 0px,
+        color-mix(in srgb, var(--brand) 84%, #ffffff 16%) 20px,
+        color-mix(in srgb, #ffffff 70%, var(--brand) 30%) 34px,
+        color-mix(in srgb, #ffffff 74%, var(--accent) 26%) 46px,
+        color-mix(in srgb, var(--accent) 62%, #ffffff 38%) 64px,
+        color-mix(in srgb, var(--accent) 56%, #ffffff 44%) 78px,
+        color-mix(in srgb, var(--brand) 82%, #ffffff 18%) 94px,
+        color-mix(in srgb, var(--brand) 88%, #ffffff 12%) 106px
+      );
+      background-size: 106px 100%;
+      background-position: 0 50%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      animation: plusShimmer 4.8s linear infinite;
+    }
+
+    @keyframes plusShimmer {
+      0% { background-position: 0 50%; }
+      100% { background-position: -106px 50%; }
+    }
+
+    .code {
+      margin: 8px 0 0;
+      font-size: clamp(2.2rem, 7vw, 4.6rem);
+      line-height: 0.95;
+      letter-spacing: -0.03em;
+      font-weight: 800;
+    }
+
+    h1 {
+      margin: 10px 0 12px;
+      font-size: clamp(1.4rem, 3.6vw, 2.2rem);
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+
+    p {
+      margin: 0 auto;
+      max-width: 56ch;
+      color: var(--muted);
+      font-size: clamp(1rem, 2.1vw, 1.12rem);
+      line-height: 1.7;
+    }
+
+    .actions {
+      margin-top: 24px;
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      min-height: 52px;
+      padding: 12px 20px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 700;
+      border: 1px solid transparent;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 280ms cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .btn:hover { transform: translateY(-2px); }
+
+    .btn-primary {
+      background: linear-gradient(130deg, var(--accent), var(--accent-strong));
+      color: #fff;
+      box-shadow: 0 12px 30px color-mix(in srgb, var(--accent) 48%, transparent);
+    }
+
+    .btn-secondary {
+      background: color-mix(in srgb, var(--card) 86%, transparent);
+      border-color: var(--card-border);
+      color: var(--text);
+    }
+
+    .foot {
+      margin-top: 18px;
+      font-size: 0.95rem;
+      color: color-mix(in srgb, var(--muted) 84%, #fff 16%);
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-layer" aria-hidden="true">
+    <span class="blob blob-a"></span>
+    <span class="blob blob-b"></span>
+    <span class="blob blob-c"></span>
+    <span class="grid-fade"></span>
+  </div>
+
+  <main class="wrap">
+    <section class="panel" aria-labelledby="not-found-title">
+      <a class="brand" href="/" aria-label="WebsitePlus Home">
+        <span>Website</span><span class="brand-plus">Plus</span>
+      </a>
+      <p class="code">404</p>
+      <h1 id="not-found-title">This page could not be found.</h1>
+      <p>
+        The link may be outdated or the page may have moved. You can head back to the homepage or contact us directly.
+      </p>
+      <div class="actions">
+        <a class="btn btn-primary" href="/">Back to Home</a>
+        <a class="btn btn-secondary" href="/#contact">Contact WebsitePlus</a>
+      </div>
+      <p class="foot">WebsitePlus.co.nz</p>
+    </section>
+  </main>
+</body>
+</html>
