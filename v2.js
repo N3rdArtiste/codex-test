@@ -123,15 +123,30 @@ if (themeToggle) {
   });
 }
 
+const syncAnchorOffset = () => {
+  if (!siteHeader) return;
+  const isMobile = window.matchMedia('(max-width: 910px)').matches;
+  const headerHeight = siteHeader.offsetHeight || 78;
+  const extraOffset = isMobile ? 20 : 12;
+  root.style.setProperty('--anchor-offset', `${headerHeight + extraOffset}px`);
+};
+
+syncAnchorOffset();
+window.addEventListener('resize', syncAnchorOffset);
+
 if (navToggle && mainNav) {
   const closeNav = () => {
     mainNav.classList.remove('is-open');
     navToggle.setAttribute('aria-expanded', 'false');
+    window.requestAnimationFrame(syncAnchorOffset);
+    window.setTimeout(syncAnchorOffset, 340);
   };
 
   navToggle.addEventListener('click', () => {
     const isOpen = mainNav.classList.toggle('is-open');
     navToggle.setAttribute('aria-expanded', String(isOpen));
+    window.requestAnimationFrame(syncAnchorOffset);
+    window.setTimeout(syncAnchorOffset, 340);
   });
 
   mainNav.querySelectorAll('a[href^="#"]').forEach((link) => {

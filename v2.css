@@ -5,6 +5,7 @@
   --radius: 18px;
   --radius-lg: 24px;
   --transition: 340ms cubic-bezier(0.22, 1, 0.36, 1);
+  --anchor-offset: 96px;
 }
 
 html[data-theme="dark"] {
@@ -63,7 +64,7 @@ html {
 
 section[id],
 [id="top"] {
-  scroll-margin-top: 96px;
+  scroll-margin-top: var(--anchor-offset, 96px);
 }
 
 body {
@@ -2020,7 +2021,7 @@ margin: 0 30px 30px;
 @media (max-width: 910px) {
   section[id],
   [id="top"] {
-    scroll-margin-top: 84px;
+    scroll-margin-top: var(--anchor-offset, 112px);
   }
 
   .nav-wrap {
@@ -2111,6 +2112,62 @@ margin: 0 30px 30px;
     width: clamp(200px, 64vw, 280px);
     height: clamp(200px, 64vw, 280px);
     padding: 0 10px;
+  }
+
+  .shopify-summary {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: start;
+    row-gap: 8px;
+    padding: 22px 20px;
+  }
+
+  .shopify-title {
+    display: grid;
+    grid-template-columns: 22px minmax(0, 1fr);
+    column-gap: 10px;
+    row-gap: 2px;
+    align-items: center;
+    min-width: 0;
+    width: 100%;
+  }
+
+  .shopify-title em {
+    grid-column: 2;
+    margin-top: 0;
+  }
+
+  .app-summary .app-title {
+    display: grid;
+    grid-template-columns: 20px minmax(0, 1fr);
+    column-gap: 10px;
+    align-items: center;
+    min-width: 0;
+    width: 100%;
+  }
+
+  .app-summary .app-title svg {
+    align-self: start;
+    margin-top: 2px;
+  }
+
+  .app-summary .app-title {
+    line-height: 1.3;
+  }
+
+  .shopify-price {
+    justify-self: start;
+    text-align: left;
+    white-space: normal;
+  }
+
+  .shopify-body * {
+    margin: 0 20px 20px;
+  }
+
+  .shopify-body .btn {
+    width: calc(100% - 40px);
+    margin: 10px 20px 20px;
   }
 
 }
