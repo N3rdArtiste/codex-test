@@ -1,3 +1,28 @@
+import {
+  createIcons,
+  Menu,
+  SunMoon,
+  Sparkles,
+  MonitorSmartphone,
+  Gauge,
+  Server,
+  SearchCheck,
+  Megaphone,
+  Send,
+  LifeBuoy,
+  Rocket,
+  AppWindow,
+  ArrowUp,
+  Sun
+} from 'lucide';
+import { DotLottie } from '@lottiefiles/dotlottie-web';
+import Alpine from 'alpinejs';
+import collapse from '@alpinejs/collapse';
+Alpine.plugin(collapse);
+Alpine.start();
+
+const lucideIcons = { Menu, SunMoon, Sun, Sparkles, MonitorSmartphone, Gauge, Server, SearchCheck, Megaphone, Send, LifeBuoy, Rocket, AppWindow, ArrowUp };
+
 const root = document.documentElement;
 const themeToggle = document.getElementById('theme-toggle');
 const navToggle = document.getElementById('nav-toggle');
@@ -41,7 +66,7 @@ const updateThemeToggleIcon = (theme) => {
   themeToggle.innerHTML = `<i data-lucide="${iconName}"></i>`;
   themeToggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
   themeToggle.setAttribute('title', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
-  if (window.lucide) window.lucide.createIcons();
+  createIcons({ icons: lucideIcons });
 };
 
 const getInitialTheme = () => {
@@ -159,24 +184,21 @@ if (navToggle && mainNav) {
 }
 
 if (form && message) {
-  const launchConfetti = () => {
+  const launchConfetti = async () => {
     if (reduceMotion) return;
 
-    if (typeof window.confetti === 'function') {
-      // tsParticles confetti preset (smoother and slower than custom CSS burst)
-      window.confetti('tsparticles', {
-        particleCount: 180,
-        spread: 110,
-        startVelocity: 22,
-        gravity: 0.9,
-        decay: 0.94,
-        scalar: 1,
-        ticks: 260,
-        zIndex: 9999,
-        disableForReducedMotion: true
-      });
-      return;
-    }
+    const { confetti } = await import('@tsparticles/confetti');
+    confetti({
+      particleCount: 180,
+      spread: 110,
+      startVelocity: 22,
+      gravity: 0.9,
+      decay: 0.94,
+      scalar: 1,
+      ticks: 260,
+      zIndex: 9999,
+      disableForReducedMotion: true
+    });
   };
 
   form.addEventListener('submit', (event) => {
@@ -233,152 +255,78 @@ if (!reduceMotion && 'IntersectionObserver' in window) {
   showStepsFlowWhenReady();
 }
 
-if (window.lucide) {
-  window.lucide.createIcons();
-}
+createIcons({ icons: lucideIcons });
 
-let sharedCheckLottiePromise;
-let sharedCheckLottieBlobUrl = '';
-
-const prepareSharedCheckLottieSource = async () => {
-  const checks = Array.from(document.querySelectorAll('.check-lottie'));
-  if (!checks.length) return;
-
-  const source = checks[0].getAttribute('data-src') || checks[0].getAttribute('src');
-  if (!source) return;
-
-  if (!sharedCheckLottiePromise) {
-    sharedCheckLottiePromise = fetch(source)
-      .then((response) => {
-        if (!response.ok) throw new Error(`Failed to load lottie: ${response.status}`);
-        return response.blob();
-      })
-      .then((blob) => {
-        sharedCheckLottieBlobUrl = URL.createObjectURL(blob);
-        return sharedCheckLottieBlobUrl;
-      })
-      .catch(() => source);
-  }
-
-  const sharedSrc = await sharedCheckLottiePromise;
-  checks.forEach((check) => {
-    if (check.getAttribute('src') !== sharedSrc) {
-      check.setAttribute('src', sharedSrc);
-    }
-  });
-};
-
-window.addEventListener('beforeunload', () => {
-  if (sharedCheckLottieBlobUrl) {
-    URL.revokeObjectURL(sharedCheckLottieBlobUrl);
-    sharedCheckLottieBlobUrl = '';
-  }
-});
-
-const runHeroProofSequence = async () => {
+const runHeroProofSequence = () => {
   const heroProof = document.querySelector('.hero-proof');
-  const items = document.querySelectorAll('.hero-proof .proof-item');
+  const items = Array.from(document.querySelectorAll('.hero-proof .proof-item'));
   if (!heroProof || !items.length) return;
 
-  if (window.customElements && typeof window.customElements.whenDefined === 'function') {
+  const proofRows = items.map((item) => {
+    const canvas = item.querySelector('.check-lottie');
+    if (!(canvas instanceof HTMLCanvasElement)) return { item, player: null };
+
+    const src = canvas.getAttribute('data-src');
+    if (!src) return { item, player: null };
+
     try {
-      await window.customElements.whenDefined('dotlottie-wc');
+      const player = new DotLottie({
+        canvas,
+        src,
+        loop: false,
+        autoplay: false
+      });
+      return { item, player };
     } catch (error) {
-      // continue with fallback behavior
-    }
-  }
-
-  await prepareSharedCheckLottieSource();
-
-  const playLottieOnce = (check) => {
-    if (!check) return;
-
-    const tryPlay = () => {
-      const player = check.dotLottie;
-
-      if (player) {
-        try {
-          if (typeof player.setLoop === 'function') player.setLoop(false);
-          if (typeof player.stop === 'function') player.stop();
-          if (typeof player.setFrame === 'function') player.setFrame(0);
-          if (typeof player.play === 'function') player.play();
-          return true;
-        } catch (error) {
-          return false;
-        }
-      }
-
-      if (typeof check.play === 'function') {
-        try {
-          check.play();
-          return true;
-        } catch (error) {
-          return false;
-        }
-      }
-
-      return false;
-    };
-
-    if (tryPlay()) return;
-
-    let attempts = 0;
-    const maxAttempts = 48;
-    const retry = () => {
-      attempts += 1;
-      if (tryPlay() || attempts >= maxAttempts) return;
-      window.setTimeout(retry, 80);
-    };
-    retry();
-
-    check.addEventListener(
-      'ready',
-      () => {
-        tryPlay();
-      },
-      { once: true }
-    );
-  };
-
-  // Ensure lottie instances stay idle until each row is revealed.
-  items.forEach((item) => {
-    const check = item.querySelector('.check-lottie');
-    if (!check) return;
-
-    const setupPlayer = () => {
-      const player = check.dotLottie;
-      if (!player) return;
-
-      try {
-        if (typeof player.setLoop === 'function') player.setLoop(false);
-        if (typeof player.stop === 'function') player.stop();
-      } catch (error) {
-        // no-op fallback
-      }
-    };
-
-    if (check.dotLottie) {
-      setupPlayer();
-    } else {
-      check.addEventListener('ready', setupPlayer, { once: true });
+      return { item, player: null };
     }
   });
 
+  const playCheck = (player) => {
+    if (!player || reduceMotion) return;
+
+    const start = () => {
+      if (!player.isLoaded) return;
+      try {
+        player.stop();
+        player.setFrame(0);
+        player.play();
+      } catch (error) {
+        // no-op
+      }
+    };
+
+    if (player.isLoaded) {
+      start();
+      return;
+    }
+
+    const onLoad = () => {
+      start();
+      player.removeEventListener('load', onLoad);
+    };
+
+    player.addEventListener('load', onLoad);
+  };
+
+  let sequenceStarted = false;
+  let safetyKickoffId = null;
+  const timerIds = [];
+
+  const revealItem = (row) => {
+    const { item, player } = row;
+    item.classList.add('is-check-visible', 'is-text-visible');
+    playCheck(player);
+  };
+
   if (reduceMotion) {
-    items.forEach((item) => {
-      const check = item.querySelector('.check-lottie');
-      item.classList.add('is-check-visible', 'is-text-visible');
-      playLottieOnce(check);
-    });
+    proofRows.forEach(revealItem);
     return;
   }
 
-  const startDelayMs = 300;
-  const rowGapMs = 820;
-  const textDelayMs = 320;
-  let safetyKickoffId = null;
+  const initialDelayMs = 220;
+  const staggerMs = 260;
 
-  let sequenceStarted = false;
   const startSequence = () => {
     if (sequenceStarted) return;
     sequenceStarted = true;
@@ -387,17 +335,11 @@ const runHeroProofSequence = async () => {
       safetyKickoffId = null;
     }
 
-    items.forEach((item, index) => {
-      const check = item.querySelector('.check-lottie');
-
-      setTimeout(() => {
-        item.classList.add('is-check-visible');
-        playLottieOnce(check);
-
-        setTimeout(() => {
-          item.classList.add('is-text-visible');
-        }, textDelayMs);
-      }, startDelayMs + index * rowGapMs);
+    proofRows.forEach((row, index) => {
+      const timeoutId = window.setTimeout(() => {
+        revealItem(row);
+      }, initialDelayMs + index * staggerMs);
+      timerIds.push(timeoutId);
     });
   };
 
@@ -414,14 +356,18 @@ const runHeroProofSequence = async () => {
         startSequence();
         obs.disconnect();
       },
-      { threshold: 0.35 }
+      { threshold: 0.3 }
     );
     heroProofObserver.observe(heroProof);
     // Fallback: start anyway in case observer timing misses on fast/restore loads.
-    safetyKickoffId = window.setTimeout(startSequence, 1400);
+    safetyKickoffId = window.setTimeout(startSequence, 1200);
   } else {
     startSequence();
   }
+
+  window.addEventListener('beforeunload', () => {
+    timerIds.forEach((timeoutId) => window.clearTimeout(timeoutId));
+  });
 };
 
 runHeroProofSequence();
